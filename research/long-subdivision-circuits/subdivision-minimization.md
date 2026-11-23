@@ -37,6 +37,12 @@ On the language restricted to such subdivisions, membership in NP also follows: 
 
 This decision problem receives a graph description. A truth table for its edge function has exponentially many entries. The reduction addresses this explicit graph representation and makes no conclusion about the usual truth-table MCSP or the equality of P and NP.
 
+### Girth growing with the input
+
+For each fixed 0<α<1, exact minimization remains NP-hard on subcubic graphs with N vertices and girth at least N^α. Start with subcubic Vertex Cover, discard isolated vertices, and choose an integer q≥1 with q/(q+1)≥α. Replace every original edge by a path of odd length L=(2M)^q+7, using h=(L−1)/2. The output size is polynomial for this fixed α. Testing the gate threshold 3hM+M+k−1 tests whether the original vertex-cover number is at most k.
+
+There are at most 2M original vertices after removing isolates. Thus N≤(L+1)M≤2LM≤L^(1+1/q), because L≥(2M)^q. Every cycle in the subdivision has length at least 3L, so the asserted girth bound follows; forests satisfy the cycle bound vacuously. Only original vertices can have degree three. Since N≥(L−1)M≥2^q M^(q+1), their number is O(N^(1/(q+1))). The family can therefore have both widely separated cycles and few branching vertices. The exponent q is fixed before the reduction and controls the polynomial growth in the output size.
+
 ## Paths of both parities
 
 The identity C(H)=|E(H)|+τ(H)−1 also holds when every original edge is replaced by a path of *any* length at least seven, and there is at least one original edge. The parity may vary from edge to edge. This extension uses the project's separately checked even-length companion L-meta-576. Its conclusion for a path of length 2h+2 is a saving of 3h+3 with no remaining edge, or a saving of 3h with one pendant left at each endpoint. [Companion theorem, independently contributed upstream](https://github.com/brilliant-hq/pequalnp-proofs/pull/656)
@@ -56,6 +62,8 @@ T meets every edge of O. Every even original edge with at least one endpoint out
     τ(H) = Σh_e + min_{C meeting O} ( |C| + number of e∈P with e not contained in C ).
 
 Since |E(H)|=2Σh_e+|O|+2|P|, the lower bound is at least |E(H)|+τ(H)−1. The star formula gives equality. This proof uses the actual unrestricted circuit reductions for both parities. The new Lean modules in this package target the odd-path theorem used in the NP-hardness reduction.
+
+The mixed-length decision problem is also NP-complete when the decomposition is part of the input. For membership in NP, certify a cover of H of size at most k−|E(H)|+1 for the gate threshold k. Its validity is checked by scanning the edges. The same verification works when membership in the subdivision family is promised. For the ordinary language requiring both a valid decomposition and a circuit of size at most k, an omitted decomposition can itself be supplied as part of the certificate and checked in polynomial time. The fixed seven-edge case gives hardness even under the degree-three and girth-21 restrictions.
 
 ## Cycles
 

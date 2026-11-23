@@ -89,7 +89,8 @@ def build(n, paths):
 
     output = join([emit("AND", u, join(leaves)) for u, leaves in stars.items()])
     assert len(gates) == len(edges) + len(cover) - 1
-    return {"inputs": next_wire, "gates": gates, "output": output, "cover": sorted(cover)}
+    return {"inputs": next_wire, "gates": gates, "output": output,
+            "cover": [v for v in range(next_wire) if v in cover]}
 
 
 if __name__ == "__main__":

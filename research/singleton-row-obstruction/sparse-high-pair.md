@@ -1,0 +1,22 @@
+# A sparse rank-four row paired with a full rank-four row
+
+Assume a seven-dimensional complex level space for the 4 by 5 permanent has injective projection to every two rows. Let \(w\cdot a=z\cdot b=1\) be translated rank-four row images, with \(z\) of full support and \(S=\operatorname{supp}(w)\) a nonempty proper subset. Write \(T=S^c\). There is one shared affine constraint \(\alpha\cdot a=\sum_j z_j r_j b_j\), with the constants absorbed into a normal. Put \(s_k=\alpha_k/w_k\) and \(\rho_k=w_k/z_k\) for \(k\in S\). Each \(d_k=s_k-r_k\) is nonzero because both rows would otherwise be jointly supported in the single column \(k\). The covectors on both row spaces are nonconstant modulo their normals.
+
+As in the full-support row argument, on lines where the two rows are supported on the same two columns \(j,k\), the full nonzero constant permanent is a product of two polynomials. Thus the first factor \(a_jb_k+a_kb_j\) must be constant. The row-pair projection is an affine isomorphism onto its image, which makes the other factor a polynomial.
+
+**Classification.** Up to labeling the groups, precisely one of the following necessary descriptions applies.
+
+1. There is a partition \(S=B\sqcup C\) into two nonempty sets with \(\rho=R\) on \(B\) and \(\rho=-R\) on \(C\). The extra affine constraint is \(w|_C\cdot a+z|_B\cdot b=0\). In particular \(w(C)+z(B)=0\).
+2. There is a single common ratio \(\rho=R\) on \(S\), and there are disjoint nonempty \(P,Q\subseteq T\). The affine constraint is \(R z|_P\cdot a+z|_Q\cdot b=1\). In particular \(Rz(P)+z(Q)=1\). This type requires at least two missing coordinates.
+
+To prove this, first suppose \(\alpha_j\ne0\) for some \(j\in T\). For every \(k\in S\) restrict both rows to \(j,k\). Then \(a_k=1/w_k\), \(a_j=(t-s_k)/\alpha_j\) in terms of the common value \(t\). If \(r_j\ne r_k\), then \(b_k=(r_j-t)/(z_k(r_j-r_k))\). The coefficient of \(t^2\) in the two-row factor is nonzero. Therefore all \(r_j=r_k=r_*\). At this parameter \(b\) varies freely on its normalization line. Constancy gives \(a_j z_j=a_k z_k\), hence \(\rho_k d_k=-\alpha_j/z_j\) for every \(k\in S\). If \(s_k\) and \(s_l\) differed for two indices of \(S\), the equal-\(r\) calculation in the full-support pair argument would give \(\rho_kd_k=-\rho_ld_l\), a contradiction. Thus \(s_k=s_*\) and \(\rho_k=R\) on \(S\). The same reasoning applies to all \(j\in P=\{j\in T:\alpha_j\ne0\}\), where \(\alpha_j=-(s_*-r_*)Rz_j\) and \(r_j=r_*\).
+
+For \(j\in T\setminus P\), if \(r_j\ne r_k\), the common parameter is fixed at \(s_k\), while \(a_j\) is arbitrary. The two-row factor requires \(b_k=0\), forcing \(r_j=s_k\). In particular \(r_j\in\{r_*,s_*\}\). Nonconstancy of \(r\) requires \(Q=\{j:\,r_j=s_*\}\) to be nonempty. Substitute the resulting values into the shared affine constraint, using the row normalizations and dividing by \(s_*-r_*\). This gives the second case.
+
+If instead \(\alpha\) vanishes everywhere on \(T\), then \(s\) varies on \(S\) because \(\alpha\notin\mathbb Cw\). The same fixed-parameter argument gives \(r_j\in\{s_k,r_k\}\) for all \(j\in T,k\in S\). If two different values \(u,v\) occurred on \(T\), the points \((s_k,r_k)\) on \(S\) would include both \((u,v)\) and \((v,u)\). For these two columns both coordinates differ, whereas the common two-row factor requires equal \(s_k-r_k\), a contradiction. Thus all \(r_j=h\) on \(T\). Each \(k\in S\) has exactly one of \(s_k=h\) and \(r_k=h\). Both resulting classes \(B=\{s_k=h\}\) and \(C=\{r_k=h\}\) are nonempty, since neither side of the shared affine constraint can be constant on its row space. Across any such pair both coordinate values differ; consequently \(d_k=d_l=d\ne0\) and \(\rho_k=-\rho_l\). These give the two ratios asserted in the first case. Substitution leaves exactly \(w|_C\cdot a+z|_B\cdot b=0\).
+
+**Conic form.** Let \(x\) be normalized on the sparse row so its signed active sum is one. On its support the high row has signed active sum \(y\) and the missing coordinates have signed sum \(t\). Choose \(h=\pm1\) so the sparse and high unnormalized phases on \(B\) differ by \(h\). The first case is
+\[
+        (y+t)(1-hy)+y+h=0 .
+\]
+Indeed the sparse sum on \(C\) is \((1-hy)/2\), and the high sum on \(B\) is \((y+h)/2\). Equivalently, \(z=hy-1\) satisfies \(z^2+htz=2\). This rational conic permits a short exact verification of the three-full-row pure-sign exceptions for support sizes three and four.

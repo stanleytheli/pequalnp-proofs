@@ -32,6 +32,8 @@ A second paper argument, one-internal-and.md, permits shared OR gates on both si
 
 The paper proof in sparse-shared-trunk.md treats arbitrary nesting above shared gates with small positive-edge footprints and explains when their outputs can be removed without increasing formula size.
 
+For bipartite graphs without four-cycles, one earlier AND can feed arbitrary terminal ANDs through a shared OR circuit. Both inputs of a terminal may be OR signals, and vertex degree is unrestricted. The minimum remains |E| + τ − 1. The paper proof counts repeated incidences when it restores missing stars. [Arbitrary terminal ANDs above one earlier AND](arbitrary-terminal-one-earlier-and.md)
+
 ## Hyperedges, graph density and two layers of shared computation
 
 HypergraphFormula.lean proves the exact binary monotone formula size for every finite linear hypergraph with edge sizes at least two and no Berge triangles or quadrangles. The answer is the sum of |e|−1 over edges, plus the transversal number, minus one. The accompanying hypergraph-formula-size.md describes the negative inputs and the matching construction. This module imports FormulaRank.lean.

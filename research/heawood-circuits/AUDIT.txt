@@ -1,2 +1,4 @@
 'HeawoodFormula.gate_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
 'HeawoodBound.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CnfFootprint.clauses_iff_coloring' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CnfFootprint.Heawood.twenty_require_thirtyseven' depends on axioms: [propext, Classical.choice, Quot.sound]

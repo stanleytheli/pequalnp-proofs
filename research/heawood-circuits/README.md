@@ -20,3 +20,7 @@ The private-cone enumeration in cone-sharing.md proves that any circuit of at mo
     python3 verify_cones.py
 
 Use Lean 4.36.0 with the pinned project/Mathlib revision. The formula certificate imports only Mathlib. The circuit witness imports PEqualNP.Defs and should be checked from the project's lean directory with its normal Lake environment.
+
+## Safe conjunctions of disjunctions
+
+A safe monotone CNF must reject every independent input. If it accepts any 20 of the 21 edges, it already requires at least 37 clauses. CnfFootprint.lean checks the theorem and the general equivalence with coloring the conflict graph on negative rows. For two, three, four and five clauses the maximum numbers of edges accepted are 3, 5, 6 and 7. The external programs footprints.cpp (set cover) and coloring.cpp (graph coloring) produce the same complete table in footprints.txt. Compile each with c++ -O3 -std=c++17 and compare its output with that transcript. See cnf-footprints.md for the proof, the classification for three clauses and an implication for circuits with one internal unsafe AND.

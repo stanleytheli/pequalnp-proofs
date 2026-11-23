@@ -1,0 +1,1 @@
+5748 matching/Boolean-limit controls, 160 direct minimum-cover enumerations, and 2667 separated clause pairs passed

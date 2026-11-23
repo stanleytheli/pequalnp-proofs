@@ -1,0 +1,12 @@
+Long-subdivision edge functions, research verification record
+
+Manuscript. The exact circuit lower bound uses the collaboration's checked odd- and even-path reductions, L-meta-575 and L-meta-576. The mixed-parity iteration, the quotient by even components, the complexity consequences, and the all-cycle corollary are mathematical arguments in this directory.
+
+Checked Lean components in this revision. SubdivisionLayout defines the physical coordinates. StarForest proves the support bound for a fan-in-two output and the terminal-forest lower bound against the project's circuit definition. Subdivision.PathCover.odd_length and even_length prove optimal internal cover costs under all four endpoint selections. Subdivision.PathCover.cover_odd proves that an optimum may be chosen to meet every original odd edge. Named checks reported only propext, Classical.choice and Quot.sound. StarForest and SubdivisionLayout were checked in the disposable project VM; the standalone PathCoverCost used the matching pinned Lean and Mathlib on the host.
+
+Independent finite checks
+• verify_mixed.py checked 28 fixed-endpoint path cases and 3,282 graph instances.
+• verify_quotient.py checked all 59,809 absent/odd/even edge labelings through five vertices against direct cover enumeration.
+• verify_compiler.py checked ten synthesized circuits on all 253,696 combined Boolean inputs and exhaustively recovered the corresponding minimum vertex covers.
+
+Physical model. The project charges one gate for each binary AND, binary OR and unary NOT. The number of uses of any gate or input is unrestricted. A circuit evaluation takes a Boolean value for each vertex, and the function accepts iff some edge has both endpoints true.

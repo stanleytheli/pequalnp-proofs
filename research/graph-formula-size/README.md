@@ -31,3 +31,11 @@ TwinBlowup.lean imports ReadOptimal.lean and proves the pointwise statement also
 A second paper argument, one-internal-and.md, permits shared OR gates on both sides of one auxiliary AND of any two input sums. Even when their raw OR subexpressions have other readers, the usual m+τ−1 lower bound survives. The same manuscript proves the bound for arbitrarily many independent ANDs with wide, almost-disjoint operand pairs sharing raw OR gates.
 
 The paper proof in sparse-shared-trunk.md treats arbitrary nesting above shared gates with small positive-edge footprints and explains when their outputs can be removed without increasing formula size.
+
+## Hyperedges, graph density and two layers of shared computation
+
+HypergraphFormula.lean proves the exact binary monotone formula size for every finite linear hypergraph with edge sizes at least two and no Berge triangles or quadrangles. The answer is the sum of |e|−1 over edges, plus the transversal number, minus one. The accompanying hypergraph-formula-size.md describes the negative inputs and the matching construction. This module imports FormulaRank.lean.
+
+ReadBudgets.lean, ReadDensity.lean and RegularRead.lean form a sequence after ReadOptimal.lean. They machine-check the Hall characterization, its induced-subgraph density equivalence and the exact readability ceil(d/2)+1 for all nonempty d-regular graphs of girth at least five and d≥2.
+
+The paper proof in two-and-layers.md covers every bipartite graph without a four-cycle and of maximum degree four. Arbitrarily many ANDs of raw OR signals can share the OR computation feeding their operands, and a further shared OR network can feed the final raw-centered AND gates. This class needs exactly 64 gates on the order-three plane and 27 on Heawood. TaintedOR.lean formalizes a packing estimate in that argument. The full circuit-class theorem in the manuscript has also been independently reviewed as a mathematical proof. OptimalReads650.lean shows that a minimum 65-leaf plane formula reads every vertex on one entire side exactly once.

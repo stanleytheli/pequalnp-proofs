@@ -1,0 +1,31 @@
+Individual kernel checks on Lean 4.36.0 in the pinned Linux project.
+Official commit a285ace2301a31d8cdea9fd9e718bca202b4d06d.
+
+OwnedRadix.Compiler.realize_official    Classical.choice, Quot.sound, propext
+OwnedRadix.Code.commitment_function    Classical.choice, Quot.sound, propext
+StackTrace.PhysicalSigma.sigmaV_of_honest_bits    Classical.choice, Quot.sound, propext
+StackTrace.CircuitRows.sigmaV_of_circuit_rows    propext, Classical.choice, Quot.sound
+StackTrace.RowAccess.single_bit_refutations    propext, Classical.choice, Quot.sound
+StackTrace.RowAccess.Codec.represent    propext, Classical.choice, Quot.sound
+StackTrace.RowAccess.universal_sound    propext, Classical.choice, Quot.sound
+StackTrace.RowAccess.universal_complete    propext, Classical.choice, Quot.sound
+StackTrace.RowAccess.refuted_iff_response    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.word_game    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.sigmaV_of_single_opening    propext, Classical.choice, Quot.sound
+SharedBatch.runs    propext, Classical.choice, Quot.sound
+OwnedRadix.Batch.sound    propext, Classical.choice, Quot.sound
+OwnedRadix.Batch.complete    propext, Classical.choice, Quot.sound
+OwnedRadix.Batch.all_batches    propext, Classical.choice, Quot.sound
+OwnedRadix.Batch.witness_bits    propext, Classical.choice, Quot.sound
+BudgetGuard.bounded_true_run    propext, Classical.choice, Quot.sound
+RawClock.linear    propext, Classical.choice, Quot.sound
+RawClock.accepts_iff    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.guarded_game    propext, Classical.choice, Quot.sound
+TraceBudget.BitOpening.blocks    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.table_arity    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.speedup_of_small_tables    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.fp3_of_small_tables    propext, Classical.choice, Quot.sound
+StackTrace.Hardwire.specialize    propext, Classical.choice, Quot.sound
+TraceBudget.BitOpening.projected_blocks    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.specialize_joint    propext, Classical.choice, Quot.sound
+StackTrace.OneOpeningGame.speedup_of_joint_tables    propext, Classical.choice, Quot.sound

@@ -1,0 +1,2 @@
+'HeawoodFormula.gate_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'HeawoodBound.upper' depends on axioms: [propext, Classical.choice, Quot.sound]

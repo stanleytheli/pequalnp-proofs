@@ -1,0 +1,16 @@
+cost 1 orbits 4 concrete 112 needs capacity check 2
+unresolved 0 []
+cost 2 orbits 11 concrete 1078 needs capacity check 3
+unresolved 0 []
+cost 3 orbits 70 concrete 9947 needs capacity check 7
+unresolved 0 []
+cost 4 orbits 325 concrete 71008 needs capacity check 6
+unresolved 0 []
+cost 5 orbits 1753 concrete 443429 needs capacity check 16
+unresolved 0 []
+cost 6 orbits 7798 concrete 2285808 needs capacity check 38
+unresolved 1 [((122, 16383), 41, 49, 60, [2])]
+cost 7 orbits 33069 concrete 10196480 needs capacity check 81
+unresolved 3 [((63, 16383), 48, 55, 72, [2, 4]), ((975, 16139), 41, 49, 62, [3]), ((969, 16383), 48, 58, 72, [2, 3, 4])]
+cost 8 orbits 117302 concrete 37591708 needs capacity check 167
+unresolved 1 [((1599, 1534), 51, 57, 68, [3])]

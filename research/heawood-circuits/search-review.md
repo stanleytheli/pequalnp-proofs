@@ -1,0 +1,47 @@
+# Heawood gate-elimination audit
+
+The function is monotone and nonconstant on every induced board considered. The positive tests are the edge minterms and the negative tests are the maximal independent sets. A monotone circuit agrees with the function everywhere exactly when it passes these tests. The graph used here has the 21 edges of the public statement. Isolated vertices are removed from subproblems.
+
+## Gate counting
+
+Write n for the number of essential inputs, k for the gate count, and b = k−n+1. A smallest circuit is a live output cone with two different parents per gate. Constant, redundant, unary, and repeated-input gates can be removed by constant propagation and wire substitution. Every wire except the output has a reader. Thus b equals the sum of fanout minus one over all non-output wires, with the output's single final use included in that formulation.
+
+Fix an induced subgraph K with no isolates. Pin some vertices P outside K to one, with P independent and with no neighbor in K. Pin the remaining outside vertices to zero. One can leave any subset F of neighbors of P free, producing the residual function edge(K) OR any(F). Every member of F is essential even when the other members are fixed to zero. Setting them to zero one at a time saves at least one gate each. Consequently the residual normalized lower bound is at least b(K). This proves validity of the free-neighbor restriction as well as projection to just the original inputs read in the prefix. Different actual restrictions that impose the same prefix statuses may use the largest of their certified normalized bounds.
+
+Let p be the number of fixed original inputs, and let X be the set of prefix gates forced to constants, extended through the suffix by ordinary constant propagation. For g in X let c(g) be the number of constant parents. Every nonconstant gate with a constant parent has exactly one and can be replaced by its other input. Counting the outgoing edges of constant wires gives this lower bound on removed gates.
+
+    p + sum over constant wires of (fanout−1) + sum over g in X of (2−c(g)).
+
+The formula counts each removed gate exactly once when only constant and boundary gates are considered. Future constant gates have a nonnegative contribution. Any nonconstant prefix gate equivalent on the tests to an earlier available wire contributes another removal when it has no constant parent. When a constant parent is present, the boundary count already covers that gate.
+
+## Suffix readers
+
+For each positive/negative test pair, choose a wire with value 1 on the positive row and 0 on the negative row, among the wires entering the suffix. Such a wire exists because the suffix is monotone. A live prefix wire with no reader so far must be read after the prefix. If one of those wires separates a pair, the pair imposes no additional reread. The other pairs produce positive clauses on the already-read wires. Every actual suffix selects a hitting set. Counting one additional reader on every selected constant wire is therefore sound. Eliminating all minimal hitting sets with possibly different restrictions proves the desired bound. Taking a subset of an actual hitting set only weakens that fanout count.
+
+## Normalizations
+
+Choose the lexicographically least encoding among all topological orders and graph symmetries of a smallest circuit. A later gate cannot be smaller than an earlier independent gate preceding it after both operands were available. Moving it before that gate would improve the encoding at its first changed place. A graph symmetry fixing every prior unordered operand pair can be applied to the whole circuit, so a smaller next pair cannot occur either. These two restrictions hold simultaneously for the same global minimum. Reversing the independent variables within a gate preserves both AND and OR.
+
+For the safe-suffix variant, first minimize size, then the number of gates positive on a maximal false row. Call these gates unsafe. A safe predecessor of an AND can replace the AND. An unsafe OR consuming a safe wire h can be removed by clamping h to zero for all its descendants and adjoining h by a final OR. The output is preserved on h=0 and on h=1 the target is true. The removed OR pays for the terminal OR, and every remaining old wire only decreases. This strictly lowers the unsafe count at equal size. An unsafe gate positive on just one edge minterm can independently be replaced at equal cost by that edge's raw endpoint AND. All edge rows retain its old value, and the replacement is pointwise below the old monotone gate. A gate positive on zero edges can be clamped to zero. After these transformations all unsafe gates may precede the safe suffix, whose sources are safe ANDs of two available wires. Their output is an OR of sources. Covering r minterms sets with r source gates and their final OR requires at least 2r−1 suffix gates, even if the OR graph shares subcomputations.
+
+## Array and table checks
+
+With maximum prefix depth eight, free.cpp uses wire IDs at most 21 and its fixed wire arrays have length 24. In safe.cpp the allowed depth is at most 14, giving wire IDs at most 27 with arrays of length 30. Row vectors use unsigned 64-bit shifts with fewer than 63 test rows. The original previous-bound reader trusts all integers in that file. Running with no seed removes this dependency. No external program or data was downloaded for this audit.
+
+The independent checker takes the claimed table as a set of targets and proves them inductively. It constructs graph automorphisms by adjacency-preserving backtracking, uses local wire numbers, puts all negative test rows first, and checks future-reader conditions by recursive positive clauses with cut inequalities rather than enumerating minimal hitting sets. It uses the published exact result on at most eight nonisolated vertices with no triangle or four-cycle as its mathematical base.
+
+## Signed replacements on a restriction
+
+On a nonconstant restricted monotone target, let P be all its positive minterms and N all its maximal negative assignments. A wire v dominates u if v is one wherever u is one on P and v is zero wherever u is zero on N. Replacing u by v can only increase downstream values on P and decrease them on N. Existing correct outputs at these extremal rows are therefore preserved, and the replacement still computes the restricted target everywhere. In particular a wire zero on every positive row may be replaced by constant zero. A wire one on every negative row may be replaced by constant one. These replacements allow the constant-wire fanout identity to count subsequent boundary gates. The implementation must evaluate later gates on the updated wire signatures. The audited implementation in strong.cpp does this.
+
+The strengthened calculation at depth ten and the independent depth-eight seed established all listed proper induced core bounds. The 12-vertex representative 8175 has 21 gates and the 13-vertex representative 8191 has 23 gates. Their reported upper bounds coincide. The full-graph 24 lower bound also has the independent replay described above.
+
+## Alternative gates and lexicographic order
+
+Among minimum-size circuits choose one with fewest unsafe gates. Among these maximize the sum over gates of its number of true positive rows minus its number of true negative rows. Finally choose the smallest gate descriptor word over every topological listing and board automorphism. Replacing a gate by an alternative AND or OR of any two available wires preserves the full function whenever its extremal signature dominates. A strict advantage at the replaced gate improves the total score, and every downstream score weakly improves. The number of unsafe gates can only fall. An unused ancestor allows a size reduction. Replacing by an equal signature and a smaller gate descriptor improves the same topological listing at its first changed descriptor. These preferences coexist with the order and symmetry restrictions above.
+
+## Gates disconnected after restriction
+
+Write R for the already-read wires read again by the actual suffix. Every feasible circuit has a minimal hitting set H contained in R. To charge gates that become disconnected from the output, enlarge H by every gate index in R. This enlarged set matches the actual gate entrances into the suffix exactly. Omitting the remaining raw-wire rereads from the representative can only decrease the fixed-wire fanout bonus. The enlarged set still satisfies the global fanout budget, since each included wire had at least one prefix reader and has at least one additional suffix reader.
+
+Under each concrete restriction, propagate a set of ordinary prefix ancestors for every wire. Raw and constant wires have empty sets. A nonconstant gate with a constant operand receives its variable operand's set. A two-variable gate receives its own index and both sets. Seed residual liveness at all gate indices having zero prefix readers and at the enlarged set of gate rereads. Every ordinary prefix gate in the simplified residual output cone belongs to one of these ancestor sets, since any prefix-to-suffix path must enter through a seed. All ordinary gates outside their union can therefore be deleted. Their count is disjoint from the constant and boundary removals because they originally have neither constant nor boundary status under this symbolic propagation. This proves the orphan charge implemented in orphan.body.

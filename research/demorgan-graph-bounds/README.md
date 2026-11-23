@@ -2,7 +2,7 @@
 
 An input chooses a set of vertices. The output indicates whether the set contains an edge. Here each binary AND, binary OR and unary NOT costs one gate. An intermediate result may have any number of readers.
 
-For every nonempty graph of maximum degree three and girth at least seven on at most **12 nonisolated vertices**, the minimum equals the number of edges plus the minimum vertex-cover size, minus one. At twelve vertices this accounts for 469 isomorphism classes and 94,013,864,835 labeled graphs. The project asks whether the formula holds at all sizes in L-meta-519. This is a finite result using external, reproducible computation.
+For every nonempty graph of maximum degree three and girth at least seven on at most **13 nonisolated vertices**, the minimum equals the number of edges plus the minimum vertex-cover size, minus one. At thirteen vertices this accounts for 1,079 isomorphism classes and 3,228,727,847,130 labeled graphs. The preceding twelve-vertex level covers 469 isomorphism classes and 94,013,864,835 labeled graphs. The project asks whether the formula holds at all sizes in L-meta-519. This is a finite result using external, reproducible computation.
 
 For the broader family of graphs with no triangle or four-cycle, the same exact value holds on at most **nine nonisolated vertices**, including all 179 nine-vertex isomorphism classes and 22,771,971 labeled graphs. Isolated inputs can be removed by restriction for both statements. The zero-edge function is outside the claims.
 
@@ -23,3 +23,5 @@ The independent ten-vertex replay turns off gate-order and input-symmetry reject
     ./replay 10 9 catalogue-10.txt
 
 The four-vertex controls include graphs containing a four-cycle for which the canonical upper size is strictly larger than the exact minimum. control-result.txt records the independent exhaustive truth-table comparison.
+
+The thirteen-vertex transcripts record all 1,079 lower-bound runs at depth eight, the remaining 45 at depth ten, and the final seven at depth twelve. All seven reached their explicit upper bounds with the same baseline search used at smaller orders. An independent augmented algorithm based on interface collision pairs and exact small truth tables also confirmed several of these final cases.

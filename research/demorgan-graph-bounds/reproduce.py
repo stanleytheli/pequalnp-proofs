@@ -16,7 +16,7 @@ def main():
     parser.add_argument('--coverage-only',action='store_true')
     args=parser.parse_args()
     narrow=args.family=='subcubic'
-    end=12 if narrow else 9
+    end=13 if narrow else 9
     checked([sys.executable,ROOT/('coverage.py' if narrow else 'coverage_girth5.py'),end])
     if args.coverage_only:return
     with TemporaryDirectory() as tmp:
@@ -28,7 +28,7 @@ def main():
             name=ROOT/f'{prefix}-{n}.txt'
             original=dict(tuple(map(int,x.split())) for x in name.read_text().splitlines())
             pending=dict(original)
-            for depth in (6,8,10,11,12):
+            for depth in ((8,10,12) if n==13 else (6,8,10,11,12)):
                 if not pending:break
                 todo=d/'pending.txt'
                 todo.write_text(''.join(f'{m} {target}\n' for m,target in pending.items()))

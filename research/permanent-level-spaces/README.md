@@ -37,3 +37,9 @@ The 4×5 finite search has another obstruction. A space containing a nonzero var
     python3 pure_column_shift_certificate.py
     python3 review_pure_shift.py
     python3 check_root_line.py
+
+## Frobenius rank over the complex numbers
+
+FrobeniusPermanent.lean bounds the rank of the ordinary bilinear Frobenius pairing on any translated rectangular permanent level space by m+n−2. If the space is closed under conjugation, its dimension has the same bound. The five-by-five specializations use the desk's permanent expression directly. The proof and its relation to the project's real result L-gct-158 are in frobenius-rank.md.
+
+OrderedField.lean also proves the dimension bound over any coefficient field that embeds in an ordered field, including a number field with a real embedding different from the chosen embedding into the complex numbers. Compile FrobeniusPermanent.lean to a local .olean first, then include that directory on LEAN_PATH.

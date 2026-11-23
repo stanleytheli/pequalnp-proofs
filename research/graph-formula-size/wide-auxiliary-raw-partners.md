@@ -37,3 +37,13 @@ The total number of additional centers is at most s+d+b. Therefore τ(G)≤(c−
                 ≥ m+τ(G)−1.
 
 The cover-star formula attains equality. The assumption of at least three labels per operand ensures that both A′ and B′ have two distinct vertices; the proof uses this when it restricts the entire set of raw partners for a double auxiliary.
+
+## Unrestricted terminal operands for supports of size seven
+
+If every A_i and B_i has at least seven labels, the lower bound also holds when both operands of every terminal AND may be arbitrary shared ORs of raw and auxiliary signals. No raw-partner condition needs to be imposed in this case.
+
+In a graph without four-cycles, any four sets of at least seven vertices have an independent transversal. Here this means one may choose a vertex from each set so that the union of the chosen vertices is independent. Repeated choices of the same vertex are allowed. Trim the sets to seven vertices each. For any seven-set T, at most two vertices have at least four neighbors in T. Indeed, two distinct vertices have at most one common neighbor. The neighborhoods in T of three such vertices would therefore contain at least 12−3=9 different vertices.
+
+Choose a vertex from the first set outside the exceptional vertices for the other three. There are at most six exceptions, so this choice leaves at least four nonneighbors in each remaining set. Retain four of them in each. In a four-set, at most one vertex has at least three neighbors, since two such vertices would share at least two neighbors. Choose a vertex in the next four-set outside the at most two exceptions for the last two. These last two sets now each contain at least two vertices adjacent to neither earlier choice. They have a nonadjacent cross pair: if the remaining sets meet, choose the same vertex in their intersection; if they are disjoint, a complete cross relation would contain a four-cycle. The four choices form the claimed independent transversal. An earlier choice may reappear later because the graph has no loops.
+
+Suppose a terminal AND received auxiliary i via one operand and auxiliary j via the other. The indices may coincide. Apply the transversal assertion to A_i,B_i,A_j,B_j. On the resulting independent input both auxiliaries are true. Their OR paths make both terminal operands true, violating the edge predicate. Thus every terminal in a correct circuit has an entirely raw side. The preceding theorem gives the exact minimum m+τ(G)−1.

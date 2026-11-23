@@ -30,7 +30,7 @@ TwinBlowup.lean imports ReadOptimal.lean and proves the pointwise statement also
 
 A second paper argument, one-internal-and.md, permits shared OR gates on both sides of one auxiliary AND of any two input sums. Even when their raw OR subexpressions have other readers, the usual m+τ−1 lower bound survives. The same manuscript proves the bound for arbitrarily many independent ANDs with wide, almost-disjoint operand pairs sharing raw OR gates.
 
-With several independent auxiliary ANDs, the exact bound also holds when their two raw supports are disjoint and have at least three labels each, and each final AND retains a wholly raw OR operand. Vertex degree and OR sharing are unrestricted. The proof assigns each newly created pair of stars to a component and counts the terminal ANDs that disappear. [Several wide auxiliaries with raw OR partners](wide-auxiliary-raw-partners.md)
+With several independent auxiliary ANDs, the exact bound also holds when their two raw supports are disjoint and have at least three labels each, and each final AND retains a wholly raw OR operand. When each raw operand has at least seven labels, both inputs of every terminal AND may also use auxiliary signals. Four such supports always admit an independent transversal, which rules out a terminal receiving auxiliaries on both sides. Vertex degree and OR sharing are unrestricted. The proof assigns each newly created pair of stars to a component and counts the terminal ANDs that disappear. [Several wide auxiliaries with raw OR partners](wide-auxiliary-raw-partners.md)
 
 The paper proof in sparse-shared-trunk.md treats arbitrary nesting above shared gates with small positive-edge footprints and explains when their outputs can be removed without increasing formula size.
 

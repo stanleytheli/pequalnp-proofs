@@ -1,0 +1,25 @@
+Lean (version 4.36.0, aarch64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+CircuitCommitment.lean passed
+  OwnedRadix.Code.committed_output_iff: Classical.choice, Quot.sound, propext
+  OwnedRadix.Code.efficient_opening: Classical.choice, Quot.sound, propext
+  OwnedRadix.Code.commitment_function: Classical.choice, Quot.sound, propext
+  OwnedRadix.Code.query_opening: Classical.choice, Quot.sound, propext
+  OwnedRadix.Compiler.realize_official: Classical.choice, Quot.sound, propext
+StackTraffic.lean passed
+  BudgetGuard.time_guard: Classical.choice, Quot.sound, propext
+  DeterministicPadding.sigma_of_clock: Classical.choice, Quot.sound, propext
+  DeterministicPadding.sigma_of_sublinear_switches: Classical.choice, Quot.sound, propext
+  StackTrace.Atomic.switch_write_clock: Classical.choice, Quot.sound, propext
+  StackTrace.Atomic.switch_write_cost: Classical.choice, Quot.sound, propext
+  DeterministicPadding.sigma_of_transfer_budget: Classical.choice, Quot.sound, propext
+ExplicitOpenings.lean passed
+  StackLayout.Wired.short_traverses: Classical.choice, Quot.sound, propext
+  StackLayout.Wired.short_machine_separation: Classical.choice, Quot.sound, propext
+  StackLayout.Wired.explicit_opening_barrier: Classical.choice, Quot.sound, propext
+PascalReader.lean passed
+  StackLayout.Wired.finite_machine_separation: Classical.choice, Quot.sound, propext
+  PascalStream.labels_without_witness: Classical.choice, Quot.sound, propext
+PhysicalRows.lean passed
+  StackTrace.PhysicalSigma.sigmaV_of_honest_bits: Classical.choice, Quot.sound, propext
+ExponentBudget.lean passed
+  TraceBudget.padded_size: Classical.choice, Quot.sound, propext

@@ -17,3 +17,17 @@ For the local auxiliary calculation, use a C++17 compiler and Python 3.10 or lat
     c++ -O3 -std=c++17 support.cpp -o support
     ./support
     python3 check_support.py
+
+## Variable occurrences and shared circuits
+
+PointwiseFormula.lean proves the per-variable bound from the diagonal orientation. ReadOptimal.lean constructs a formula that computes the same function and uses every individual variable at most as often. It is an OR of stars, with each edge owned by one endpoint. These files depend successively on FormulaRank.lean. Compile them in that order using the same local Lean search path.
+
+The matching algorithm in readability.py either constructs a formula meeting specified variable-use budgets or returns a Hall obstruction. Run python3 readability-check.py for 1,384 comparisons with exhaustive orientation, plus witnesses for the Petersen, Heawood and order-three incidence graphs. The proof and graph-input complexity result are in readability-and-minimization.md.
+
+The paper proof in shared-or-formulas.md extends the exact bound to circuits whose final stars can share arbitrarily through an OR network fed by raw variables and private monotone formulas. A separate formal result, Collision650.lean, gives a necessary condition on any 63-gate witness on the order-three incidence graph. It uses the project's physical circuit definitions. In the project Lean workspace, first compile StandaloneOneSided.lean and ProjectivePlane650.lean, then Collision650.lean.
+
+TwinBlowup.lean imports ReadOptimal.lean and proves the pointwise statement also for graphs obtained by replacing vertices by nonempty independent twin classes. Each replacement term is now a complete bipartite subgraph. The twin-blowups.md manuscript derives uniform readability, exact weighted formula size, an exact unrestricted circuit-size identity and an explicit family with an unbounded formula-to-circuit size ratio.
+
+A second paper argument, one-internal-and.md, permits shared OR gates on both sides of one auxiliary AND of any two input sums. Even when their raw OR subexpressions have other readers, the usual m+τ−1 lower bound survives. The same manuscript proves the bound for arbitrarily many independent ANDs with wide, almost-disjoint operand pairs sharing raw OR gates.
+
+The paper proof in sparse-shared-trunk.md treats arbitrary nesting above shared gates with small positive-edge footprints and explains when their outputs can be removed without increasing formula size.

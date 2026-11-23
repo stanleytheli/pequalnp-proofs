@@ -1,0 +1,43 @@
+Lean 4.36.0, pinned Mathlib
+'GraphProbability.probability_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.lower_of_join_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.Hamiltonian.tour_union' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.Hamiltonian.permutation_of_tour' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.Hamiltonian.no_perm_on_cut' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.Hamiltonian.two_pow_sub_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.Hamiltonian.permutation_two_pow_sub_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.PositiveOdd.profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GraphProbability.PositiveOdd.exponent' depends on axioms: [propext, Quot.sound]
+
+barrier-audit.log
+m=2 maximal cuts=2 repairs=2
+m=3 maximal cuts=6 repairs=12
+m=4 maximal cuts=14 repairs=48
+m=5 maximal cuts=30 repairs=160
+m=6 maximal cuts=62 repairs=480
+m=7 maximal cuts=126 repairs=1344
+1280 exact affine probability controls passed
+
+positive-border-audit.log
+384 exact rational cover/probability inequalities passed, including 43 identically impossible configurations
+
+threshold-audit.log
+320 min-cut threshold controls passed, including 39 exact ties and 63 infinite cover minima
+
+positive-odd-audit.log
+40 exact conditional odd-path maxima and uniqueness controls passed
+n=1 clauses=[] physical=22 leading coefficient=3
+n=1 clauses=[(1,)] physical=56 leading coefficient=0
+n=1 clauses=[(-1,)] physical=56 leading coefficient=1
+n=1 clauses=[(1,), (-1,)] physical=90 leading coefficient=0
+n=2 clauses=[(1,), (2,)] physical=112 leading coefficient=6
+n=2 clauses=[(1,), (2,)] physical=112 leading coefficient=0
+full HC2 physical=18376 edges=18914 gates=28101 W=67106
+full HC3 physical=102242 edges=105245 gates=156365 W=373355
+full HC4 physical=168808 edges=173768 gates=258171 W=616436
+
+supports-audit.log
+30 independent physical-root contractions with paired markers passed, including 11 zeroes and witness multiplicity 2
+
+event-audit.log
+96 exact input-independent literal-coupling bounds passed

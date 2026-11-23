@@ -1,0 +1,28 @@
+# Nonuniform languages represented by positive graph-probability limits
+
+Consider languages of binary strings. For each input length \(n\), permit a sequence of graphs on at most \(N(n)\) nonisolated vertices, where \(N\) is polynomial. At each step the vertex probabilities are arbitrary real affine functions of the input, taking values in \([0,1]\) on the cube. Multiply the probability that no selected edge appears by a positive real scalar. Say the sequence represents a language if its pointwise limit is finite and nonnegative, and is positive precisely on the language's length-\(n\) strings. The graph, coefficients and scale may depend on the approximation step. There is no uniformity assumption.
+
+**The represented languages are exactly \(\mathrm{NP/poly}\).** The same languages are obtained using subcubic graphs of girth at least \(N^\alpha\) for any fixed \(0<\alpha<1\), each admitting a gate-optimal read-two monotone formula for its Boolean edge predicate. Here \(N\) in the girth bound denotes the actual vertex count. In the construction only two physical affine parameters mention any given input bit, each depending on that bit alone.
+
+## A finite certificate on arbitrary graphs
+
+At each length with any positive inputs, normalize the target so its smallest positive value is one. This costs only a further positive scalar. The finite-weight separation argument provides polynomial-bit nonnegative integer advice and a threshold such that a string is accepted precisely when some vertex cover has selected weight sum strictly below threshold. That argument did not use bipartiteness. Guess one bit per vertex, check every edge is covered, and add the selected weights using the advice. A length with no positive string can be encoded by one advice bit. This is an NP verification with polynomial advice. [Proof of real separation and advice compression](positive-border.md)
+
+## Encoding an arbitrary verifier and all its accepting witnesses
+
+For each length choose the nondeterministic polynomial-size Boolean verifier \(V(x,w)\) supplied by \(\mathrm{NP/poly}\), with a fixed polynomial witness length. Constants and gates translate into a polynomial number of clauses of width at most three. Include the defining equivalence of each gate to its inputs, and require its output to be true. The auxiliary gate values are uniquely forced by \((x,w)\), so there is exactly one complete satisfying assignment per accepting pair. A constant contradiction can be written as two inconsistent unit clauses. We can append two fresh forced-true variables and their redundant disjunctive clause. This preserves multiplicity and ensures there is a tuple clique of size three.
+
+Use the truth records, tuple cliques, alternating switches, and long odd paths of the positive Hamiltonian construction. Give the distinguished port of the false record of input bit \(i\) marker \(x_i\), and the corresponding port of its true record marker \(1-x_i\). Every other vertex has marker one. At a vertex of physical reward \(a\) and marker \(z\), substitute selection probability \(1-t^a z\). For \(0<t\le1\) these are cube-preserving. At the common minimal allowed absence exponent \(W\), only the unique optimal switch configurations for accepting pairs can contribute. If there are no accepting pairs, all configurations have higher absence exponent and this coefficient vanishes. For a record labeling the guessed input \(b_i\), exactly the *other* truth-value port is absent. Its marker is \(x_i\) when \(b_i=1\) and \(1-x_i\) when \(b_i=0\). Thus
+\[
+ [t^W]Q = \sum_{b\in\{0,1\}^n} \#\{w:V(b,w)\}
+       \prod_{i:b_i=1}x_i\prod_{i:b_i=0}(1-x_i).
+\]
+This is the unique multilinear extension of the verifier's witness-count function. At a Boolean input it counts exactly the witnesses for that string. The identity has integer coefficients and survives specialization to any field. The stated support characterization uses the real numbers, where every positive integer remains positive. [Physical construction, reward bound and formula optimum](positive-odd-construction.md)
+
+For the optional girth bound, let \(M\) denote the number of edges of the switch graph. It has no isolated vertices and at most \(2M\) vertices. Subdividing each edge to an odd length \(L\ge7\) gives at most \((L+1)M\) physical vertices and girth at least \(3L\). Choose a constant integer \(q\) with \(q/(q+1)\ge\alpha\), and an odd \(L\ge(2M)^q\) of comparable size. Then \((L+1)M\le L^{1+1/q}\). All Boolean and arithmetic parameters keep polynomial length. The redundant tuple triangle produces an odd cycle after the switches and subdivisions.
+
+## Graphs near bipartite
+
+The deterministic bipartite upper bound extends whenever every approximant becomes bipartite on deleting at most \(O(\log n)\) vertices. Provide a deletion set in the advice. Enumerate its polynomially many cover membership patterns, reject any pattern leaving an uncovered internal edge, and force into the remaining cover every remaining neighbor of an omitted vertex. Remove those forced covered vertices while charging their weights, and use bipartite minimum cut for the residual graph. Minimizing over the patterns decides the threshold in polynomial time. The same proof works for any advised graph family having polynomial-time minimum-weight vertex cover.
+
+Weighted independent-set and vertex-cover polynomials were previously proved VNP-complete. The statement here concerns supports of real probability-preserving limits, advice for arbitrary real parameters, and the simultaneous degree, girth and read-two restrictions. [Briquel and Koiran, *A Dichotomy Theorem for Polynomial Evaluation*](https://arxiv.org/abs/0902.2300)

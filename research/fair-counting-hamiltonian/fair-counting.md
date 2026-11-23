@@ -1,0 +1,41 @@
+# Exact counting on optimal read-two edge formulas with fair input bits
+
+Fix 0<α<1. Counting the satisfying assignments of a read-two monotone formula is #P-complete under polynomial-time metric reductions even for the following promises. The formula is the optimal unrestricted De Morgan circuit for the edge predicate of an explicit bipartite, subcubic graph H; H is a uniform ten-edge subdivision of another subcubic graph, and its girth is at least |V(H)|^α. One exact count suffices for the reduction. The formula, its graph, its path layout and its numerical gate optimum may all be supplied together. The parity of this count is ⊕P-complete under polynomial-time many-one reductions on the same family of promises.
+
+In a metric reduction the source answer is recovered by a polynomial-time function of the source instance and one target answer. Here the recovery takes a known residue of the count. Under independent fair input bits the probability that the edge predicate is true is its satisfying-assignment count divided by 2^|V(H)|. Each assignment is a witness for membership in #P and likewise for membership modulo two.
+
+## The signed graph encoding
+
+Start from a Boolean CNF on n variables with no empty clause; constant cases can be settled directly. For each variable make a triangle with its true and false literal vertices (ordinary weight 1) and a flag (weight −1). For each clause make another flag of weight −1 adjacent to its satisfying literals. The sum over independent sets, weighted by the product of selected vertex activities, is precisely the number of satisfying assignments. A flag unconstrained by its neighbors sums to zero, whereas a blocked flag contributes one. This implements the requirement to choose exactly one literal per variable and at least one literal per clause. Every component has a variable triangle. All graphs in the reduction are loopless and simple.
+
+Produce a subcubic signed graph S using the equality-path degree reduction. A vertex of degree d≥1 receives a path of d copies, one per incident original edge, with consecutive copies linked by a path of length three with both internal activities −1. The endpoint interaction is diag(−1,1), as follows from E diag(1,−1) E diag(1,−1) E, where E has rows (1,1) and (1,0). Put the original activity on the first copy. When d is even, assign −1 to the last copy as well; the two are distinct. The common spin thus contributes a known sign (−1)^(d−1) times its original weight for either spin. Every negative site has degree at most two, including the private equality-path vertices. Tree replacements preserve the cycle rank of each component. Let S have T negative sites and let η be the product of the known signs. Its signed independent-set sum is η times #SAT. When the input graph already has this subcubic and spare-port property the replacement may be omitted, setting η=1.
+
+## One shared Fibonacci modulus
+
+Let F₀=0, F₁=1 and F_(j+2)=F_(j+1)+F_j. Take D≡9 (mod 10), D≥9, with Q=F_D>2^n, and put a=F_(D−1). Consecutive Fibonacci numbers are coprime, so a is invertible modulo Q. We can choose D=O(n+1) by F_(j+2)≥2F_j for j≥1.
+
+First remove all signs in S. Give every vertex weight one and attach one private path of D−3 vertices to each of the T formerly negative sites. Each site has a spare port, so the expanded graph K is subcubic. A pendant path of k vertices has F_(k+2) independent sets conditional on its parent being absent and F_(k+1) conditional on the parent being present. At k=D−3 these numbers are a and F_(D−2)=Q−a. Summing over the parent spins and working modulo Q gives
+
+    #IS(K) ≡ a^T η #SAT  (mod Q).
+
+Write M=|E(K)|. Choose an even L that is a multiple of ten and is 1 modulo D. Initially L=D+1 works. Replacing every edge of K by an unweighted length-L path gives H. The path's endpoint matrix is E^L. The identity E²=E+I yields E^D=F_D E+F_(D−1)I≡aI (mod Q). With h=(L−1)/D we get E^L≡a^h E. Different path interiors are disjoint, so
+
+    #IS(H) ≡ a^(T+hM) η #SAT  (mod Q).
+
+Compute the least nonnegative residue of η a^(−T−hM) #IS(H) modulo Q. It equals #SAT because that integer is between zero and 2^n. If the oracle returns the accepting count of the edge predicate, substitute #IS(H)=2^|V(H)|−#accept. This performs one oracle call over the integers; neither a sequence of interpolation queries nor a primality assumption on Q is needed.
+
+For the girth condition choose a fixed positive integer q with q/(q+1)≥α. Increase L by multiples of 10D until L≥(2M)^q. Then N=|V(H)|=|V(K)|+(L−1)M≤(L+1)M≤L^(1+1/q), since K has no isolated vertices. Every cycle has length at least 3L≥N^α. The source and the explicit graph, all gate indices, counts and moduli have polynomial bit length for fixed α. Without extra girth padding, the graph has O(s(n+1)²) vertices for input size s including literal occurrences. For every multiple L of ten, H is also the ten-subdivision of the graph obtained by replacing each edge of K with L/10 edges.
+
+## The optimal formula on each query
+
+Each intermediate component contains an original cycle; the pendant paths preserve its cycle rank. In H, let A consist of the vertices of K and all even-position interiors of its even paths. Every vertex in the opposite class has degree two. The even-path cover calculation gives a minimum cover equal to A. Within each component of K the marginal charge for using all base vertices is its number of vertices, while omitting them costs its number of edges. A connected component containing a cycle has at least as many edges as vertices. Thus a star formula centered on A has |E(H)|+|A|−1 gates, which is optimal even with arbitrary sharing and negation by the long-subdivision theorem. It reads each center once and each other vertex exactly twice. The formula is built in time linear in the size of H from its displayed paths. [Long-subdivision theorem and parity quotient](https://github.com/stanleytheli/pequalnp-proofs/tree/a31fcb5bd01e0bd1ba8e58c7c7db40195392c5fa/research/long-subdivision-circuits)
+
+For parity, every weight of S equals 1 modulo two, including the known global sign. Also E³=I over the two-element field. Choose L divisible by ten and congruent to 1 modulo 3, with its size increased as above for the desired girth. The parity of #IS after this single uniform subdivision equals the parity of #SAT, and the edge-function accepting count has the same parity as #IS. This gives the stated many-one reduction for the parity decision problem.
+
+## Prior results and approximation
+
+The exact hardness of counting independent sets, including several sparse or bipartite restrictions, is classical. Vadhan uses Fibonacci and interpolation methods on sparse and planar graphs. Greenhill proves hardness on cubic graphs using degree-reduction chains. Briquel and Koiran prove a many-one reduction for bipartite independent-set counting and simulate negative weights using a large modulus and multiple leaves. Faben proves modular hardness for bipartite independent sets and uses the literal-triangle and clause-flag construction at parity. The argument here arranges one pendant path per signed site and one long uniform stretch for every edge using the same modulus; the conjunction with the optimal read-two formula and growing girth is the point of the construction. [Vadhan](https://doi.org/10.1137/S0097539797321602) [Greenhill](https://web.maths.unsw.edu.au/~csg/papers/complexity.pdf) [Briquel and Koiran](https://perso.ens-lyon.fr/pascal.koiran/Publis/mfcs09.dichotomy_theorem.pdf) [Faben](https://arxiv.org/abs/0809.1836)
+
+The decoder needs exact low-order information. In contrast, on every graph queried here the unweighted independent-set count admits a deterministic approximation scheme: activity 1 is below the degree-three tree threshold 4 in Weitz's theorem. The proof therefore does not give an approximation-preserving reduction for #BIS. [Weitz, *Counting independent sets up to the tree threshold*](https://doi.org/10.1145/1132516.1132538)
+
+The scripts fair_metric.py and check_metric.py construct the explicit single graph and validate its residue against brute-force CNF counts. The auxiliary fair_counting.py and check_fair.py implement a two-level rational interpolation as a separate control on small examples.

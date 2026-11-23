@@ -1,0 +1,33 @@
+Lean 4.36.0, pinned Mathlib
+'SparseHamiltonian.bijective_of_rank' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseHamiltonian.certificate_iff_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseHamiltonian.FibonacciTransfer.common_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Multiquery controls
+Signed controls: exact integer counts matched; 62 fair queries; largest 1100
+CNF [(1,)] = 1 from 27 fair queries; largest 1100
+CNF [(1,), (-1,)] = 0 from 54 fair queries; largest 3060
+CNF [] = 2 from 11 fair queries; largest 300
+
+One-query controls (source variables, clauses, physical vertices, modulus, answer, parity, width)
+1 0 90 34 2 0 0
+1 1 160 34 1 1 0
+1 2 230 34 0 0 0
+2 1 259 34 3 1 0
+2 3 3087 34 1 1 0
+3 1 2818 34 7 1 0
+3 2 3596 34 6 0 0
+3 4 3298 34 0 0 0
+4 4 4876 34 4 0 0
+6 3 28615 4181 34 0 0
+
+Fixed-family controls
+m=1, fixed N=7981, edges=7990, Q=34, checked subcubes=6, max width=0
+m=2, fixed N=30542, edges=30580, Q=34, checked subcubes=6, max width=0
+m=3, fixed N=67683, edges=67770, Q=34, checked subcubes=2, max width=0
+
+Read-two formula controls
+HC n=2 variables=4608 gates=6927 max_reads=2
+HC n=3 variables=19658 gates=29567 max_reads=2
+HC n=4 variables=32172 gates=48391 max_reads=2
+HC n=5 variables=69160 gates=104039 max_reads=2

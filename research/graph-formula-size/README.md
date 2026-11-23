@@ -32,7 +32,7 @@ A second paper argument, one-internal-and.md, permits shared OR gates on both si
 
 The paper proof in sparse-shared-trunk.md treats arbitrary nesting above shared gates with small positive-edge footprints and explains when their outputs can be removed without increasing formula size.
 
-For bipartite graphs without four-cycles, one earlier AND can feed arbitrary terminal ANDs through a shared OR circuit. Both inputs of a terminal may be OR signals, and vertex degree is unrestricted. The minimum remains |E| + τ − 1. The paper proof counts repeated incidences when it restores missing stars. [Arbitrary terminal ANDs above one earlier AND](arbitrary-terminal-one-earlier-and.md)
+For all graphs without triangles or four-cycles, one earlier AND can feed arbitrary terminal ANDs through a shared OR circuit. Both inputs of a terminal may be OR signals, and vertex degree is unrestricted. The minimum remains |E| + τ − 1. The proof counts the repeated incidences of restored stars and the OR gates removed when their shared signal is set to false. [Arbitrary terminal ANDs above one earlier AND](arbitrary-terminal-one-earlier-and.md)
 
 ## Hyperedges, graph density and two layers of shared computation
 

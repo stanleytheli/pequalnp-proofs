@@ -16,3 +16,7 @@
 'WeightedFormula.Hypergraph.exact_hypergraph_size' depends on axioms: [propext, Classical.choice, Quot.sound]
 'ProjectivePlane650.optimal_reads' depends on axioms: [propext, Classical.choice, Quot.sound]
 'TaintedOR.Queries.gate_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'TaintedOR.Table.approximate_queries' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ORReplacement.near_operand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ORReplacement.unique_wrong_receiver' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ORReplacement.delete_slots' depends on axioms: [propext, Classical.choice, Quot.sound]

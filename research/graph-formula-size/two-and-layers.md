@@ -1,6 +1,6 @@
 # Two layers of AND gates with shared OR circuits
 
-Let G be a finite simple bipartite graph with no four-cycle, maximum degree at most four, m ≥ 1 edges, and minimum vertex-cover size τ. Consider binary monotone circuits organized as follows.
+Let G be a finite simple graph with no triangle or four-cycle, maximum degree at most four, m ≥ 1 edges, and minimum vertex-cover size τ. Consider binary monotone circuits organized as follows.
 
 - The internal AND gates compute signals of the form h = (OR A) AND (OR B), where A and B are sets of raw vertex variables represented by OR circuits.
 - A second AND layer has one term x_z AND Q_z per selected center z. Each Q_z is computed by OR gates from raw variables and the internal signals.
@@ -49,7 +49,7 @@ When I is empty, set h to false. A successful two-vertex input at center z must 
 
 When I has just one label, use that raw label in place of h. At most one extra opposite-operand group is needed. If both a center z in A and a center w in B existed, z and w would be adjacent and would both be neighbors of the common label in I, forming a triangle. The replacement and extra group have zero errors.
 
-Finally assume |I| ≥ 2. There is at most one consuming center z, since it must be adjacent to all of I. A used h has exactly one such center. If z belongs to an operand replace h directly by the opposite operand, which consists entirely of neighbors. Otherwise put Z for the color class of z and P for the other color class. At least one operand, say A, is wholly in P. Otherwise the all-Z assignment would light h and the term at z. If A has at most one vertex outside N(z), replace h by the raw wire A. If A has two or more such vertices, all vertices of B in P must be in N(z). For a nonneighbor b in B intersect P, the input consisting of z, b and a nonneighbor in A would be independent. Every vertex of B in Z must also be adjacent to every nonneighbor in A, by the same three-vertex test. Hence B contains at most one vertex of Z, by the four-cycle hypothesis. In this case replace h by B. In either case the chosen operand covers all true pairs previously supplied by h at z and has at most one error. Its OR path reaches no other center.
+Finally assume |I| ≥ 2. There is exactly one consuming center z, since every consumer is adjacent to all of I and two distinct centers cannot have two common neighbors. Put A_bad = A minus N(z) and B_bad = B minus N(z). Every vertex a in A_bad is adjacent to every vertex b in B_bad. Indeed, the input containing z, a and b lights h and its final term, and z is adjacent to neither a nor b. The two bad sets therefore form the sides of a complete bipartite subgraph. Four-cycle freeness implies that at least one bad set has at most one element. Replace h globally by the corresponding whole raw operand. It covers every pair previously supplied by h at its unique center and introduces at most one erroneous membership. This argument works even if z belongs to an operand.
 
 ## Combining the counts
 

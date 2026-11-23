@@ -1,0 +1,24 @@
+Verification record
+
+The first five imported local modules came from the TraceHardnessFP3 development, whose verification script rebuilt its full dependency graph from empty temporary object files under the official pinned project. The additional FP3Columns, FP3Window and FP3WireCodec modules were checked in that same Linux proof environment. FP3SourceRead was checked independently on the host using the same reviewed Mathlib revision and Lean 4.36.0. Each command used one worker and kernel elaboration. The entire archive also provides a fresh-object verification script. The local audit below records the four additional modules individually; a single rebuild of this exact new archive has not yet been run.
+
+FP3Columns  ColumnCheck.Formula.correct  [propext, Classical.choice, Quot.sound]
+FP3Columns  ColumnCheck.serial_rows  [propext, Classical.choice, Quot.sound]
+FP3Columns  ColumnCheck.physical  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Tree.test_correct  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.allValues_get  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Pointer.all_stacks  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Control.command_value  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Control.peek_value  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Control.stateTest_eval  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Runtime.checks  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Runtime.all_checks  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Table.check_iff  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Table.decoded_table  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Table.counter_iff  [propext, Classical.choice, Quot.sound]
+FP3Window  ColumnCheck.Table.physical_counter  [propext, Classical.choice, Quot.sound]
+FP3WireCodec  ColumnCheck.Wire.row_recover  [propext, Classical.choice, Quot.sound]
+FP3WireCodec  ColumnCheck.Wire.represent  [propext, Classical.choice, Quot.sound]
+FP3WireCodec  ColumnCheck.Wire.represent_word  [propext, Classical.choice, Quot.sound]
+FP3SourceRead  DyadicLookup.physical_lookup  [propext, Classical.choice, Quot.sound]
+FP3SourceRead  DyadicLookup.physical_binary_address  [propext, Classical.choice, Quot.sound]

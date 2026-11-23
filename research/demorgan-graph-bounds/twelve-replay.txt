@@ -1,0 +1,22 @@
+1 essential classes 0 labeled 0 all labeled 1
+2 essential classes 1 labeled 1 all labeled 2
+3 essential classes 1 labeled 3 all labeled 7
+4 essential classes 3 labeled 19 all labeled 38
+5 essential classes 3 labeled 150 all labeled 286
+6 essential classes 8 labeled 1515 all labeled 2776
+7 essential classes 12 labeled 18945 all labeled 33492
+8 essential classes 26 labeled 292145 all labeled 496052
+9 essential classes 45 labeled 5457420 all labeled 8917588
+10 essential classes 100 labeled 120969585 all labeled 191324056
+11 essential classes 200 labeled 3136137075 all labeled 4822192436
+12 essential classes 469 labeled 94013864835 all labeled 140993279752
+3 1 unrestricted circuit minima verified
+4 3 unrestricted circuit minima verified
+5 3 unrestricted circuit minima verified
+6 8 unrestricted circuit minima verified
+7 12 unrestricted circuit minima verified
+8 26 unrestricted circuit minima verified
+9 45 unrestricted circuit minima verified
+10 100 unrestricted circuit minima verified
+11 200 unrestricted circuit minima verified
+12 469 unrestricted circuit minima verified

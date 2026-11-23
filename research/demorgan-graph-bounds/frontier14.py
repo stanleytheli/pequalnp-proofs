@@ -19,11 +19,11 @@ def main():
         binary = Path(tmp)/"lower14"
         if args.replay:
             subprocess.run(["c++", "-std=c++17", "-O3", "-DVERTICES=14", ROOT/"larger.cpp", "-o", binary], check=True)
-        for depth in (5, 8, 10):
+        for depth in (5, 8, 10, 12):
             rows = [tuple(map(int, x.split())) for x in (ROOT/f"fourteen{depth}.txt").read_text().splitlines()]
             unique = {mask for mask, _, _, _ in rows}
             assert len(rows) == len(unique) and unique <= targets.keys() - solved
-            if depth < 10:
+            if depth < 12:
                 assert unique == targets.keys() - solved
             for mask, lower, upper, _ in rows:
                 assert 0 <= lower <= upper == targets[mask]

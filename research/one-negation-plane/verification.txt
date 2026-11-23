@@ -1,0 +1,7 @@
+'PEqualNP.Outside.Window997.light_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.first_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_disjoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_one_not_229' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.even_plane_one_not997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.odd_plane_one_not997' depends on axioms: [propext, Classical.choice, Quot.sound]

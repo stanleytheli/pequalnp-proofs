@@ -25,3 +25,9 @@ The independent ten-vertex replay turns off gate-order and input-symmetry reject
 The four-vertex controls include graphs containing a four-cycle for which the canonical upper size is strictly larger than the exact minimum. control-result.txt records the independent exhaustive truth-table comparison.
 
 The thirteen-vertex transcripts record all 1,079 lower-bound runs at depth eight, the remaining 45 at depth ten, and the final seven at depth twelve. All seven reached their explicit upper bounds with the same baseline search used at smaller orders. An independent augmented algorithm based on interface collision pairs and exact small truth tables also confirmed several of these final cases.
+
+## Fourteen-input research frontier
+
+The full catalogue contains 2,765 subcubic, girth-seven isomorphism classes on fourteen nonisolated vertices. The depth-five, depth-eight and depth-ten searches establish the exact optimum for 2,743 classes. They leave 22 classes unresolved. The complete catalogue covers 126,029,486,414,715 labeled graphs without isolates. To reproduce the catalogue check, run `python3 coverage.py 14`. The lower-bound searches use the proved thirteen-input results for restrictions.
+
+`python3 frontier14.py` summarizes the archived transcripts. Add `--replay` to compile and rerun all recorded searches, or `--remaining output.txt` to write the outstanding encodings and their explicit upper bounds. The degree and girth assumptions, gate basis and finite-search arguments are the same as in the smaller catalogues. Coverage of the entire fourteen-vertex catalogue was verified, while exact circuit-size coverage remains partial.

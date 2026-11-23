@@ -1,0 +1,8 @@
+'PEqualNP.Outside.Window997.plane57_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_disjoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_one_not_229' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_threshold_three997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.nested_count997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.full_one_row997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.thin_deletion997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.small_transversal997' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,3 @@
+'PEqualNP.Outside.Window997.chain_first997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.local_rank_exact997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.false_full_cut997' depends on axioms: [propext, Classical.choice, Quot.sound]

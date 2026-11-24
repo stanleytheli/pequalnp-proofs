@@ -1,0 +1,19 @@
+'LimitedNegation.stable_pins' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.circuit_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.run_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.pin_list' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.count_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.sum_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.freeze_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LimitedNegation.Project.plane_tradeoff' depends on axioms: [propext, Classical.choice, Quot.sound]
+q=2, n=7, gates=431, NOT=3, cases=128, all 7 outputs verified
+q=4, n=21, gates=5277, NOT=5, cases=133, all 21 outputs verified
+q=8, n=73, gates=44975, NOT=7, cases=245, all 73 outputs verified
+q=16, n=273, gates=316393, NOT=9, cases=565, all 273 outputs verified
+q=3, modular field=73, every affine line matched direct counts in six controls
+q=5, modular field=241, every affine line matched direct counts in six controls
+q=7, modular field=113, every affine line matched direct counts in six controls
+q=9, modular field=577, every affine line matched direct counts in six controls
+q=11, modular field=353, every affine line matched direct counts in six controls
+q=25, modular field=1601, every affine line matched direct counts in six controls
+q=3 actual netlist: 45477 gates, 4 NOTs, all 8192 inputs and 13 outputs

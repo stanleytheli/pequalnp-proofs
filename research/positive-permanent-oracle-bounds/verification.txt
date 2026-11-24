@@ -1,0 +1,47 @@
+Lean 4.36.0, mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842.
+
+'PositivePermanent.decompose' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.limit_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.positive_amplitudes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.matching_amplitudes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.normalized_permanent_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PermanentDecision.on_face_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PermanentDecision.padded_face' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.OrderedSupport.WeakOrder.live_permanent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.OrderedSupport.WeakOrder.casts_negative' depends on axioms: [propext]
+'PositivePermanent.Flow.envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.policy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.assignment_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.masked_decomposition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.normalized_gate_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+check_faces
+175 nonzero matrices and 11 structural zeros, through order six
+49 cases with multiple good permutations, 8810 admissible matchings enumerated
+Both matching faces and every coefficient of the recovered initial polynomial agreed exactly.
+
+check_line_graph
+order, B vertices, physical H vertices, matching monomials 1 4 3 1
+order, B vertices, physical H vertices, matching monomials 2 36 36 2
+order, B vertices, physical H vertices, matching monomials 3 96 99 6
+order, B vertices, physical H vertices, matching monomials 4 184 192 24
+order, B vertices, physical H vertices, matching monomials 5 300 315 120
+raw Bernoulli N, pole, coefficient 36 18 1
+raw Bernoulli N, pole, coefficient 36 18 13/24
+raw Bernoulli N, pole, coefficient 36 18 0
+raw Bernoulli N, pole, coefficient 60 30 1
+raw Bernoulli N, pole, coefficient 60 30 13/24
+raw Bernoulli N, pole, coefficient 60 30 0
+raw Bernoulli N, pole, coefficient 84 42 1
+raw Bernoulli N, pole, coefficient 84 42 13/24
+raw Bernoulli N, pole, coefficient 84 42 0
+
+check_oracle
+10 gates, 2 nested masked 3x3 permanents, 63 output exponents.
+343 support directions attained by explicit flow witnesses.
+25 rational policies recovered the exact exponent mean of their full parse distributions.
+
+check_repeat_jets
+248 labeled oracle partials match expanded formal derivatives
+36 correction slices recover exactly their permitted target supports
+2920 padded fixed-rank faces have exactly their predicted target images

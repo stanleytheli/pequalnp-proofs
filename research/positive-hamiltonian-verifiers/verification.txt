@@ -1,0 +1,6 @@
+border masks, consistent exponent vectors, surviving vectors: 8 3 2
+gap masks, nonzero coefficients: 16 8
+
+81 direct weighted arc-pair replacements on all complete digraphs of orders 3 and 4
+30 exact formal polynomial comparisons, including empty constraints, repetitions and incompatible pins
+32,768 ternary-CSP assignments checked for the parsimonious NAND truth table

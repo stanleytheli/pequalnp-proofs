@@ -1,0 +1,86 @@
+Lean 4.36.0. These declarations were kernel checked against installed official mathlib4.
+
+'SparseAffine.middle_signature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.program_ends' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.normalize_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.ten_edge_signature' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.specialize_network' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.cont_variable_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.root_denom_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.generic_activities' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.generic_wire' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.all_field_specialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.expand_path' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.expand_network' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ReadOnce.read_once_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CutRank.independent_cut_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CutRank.edge_cut_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CutRank.induced_matching_ranks' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.Cube.multilinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.Cube.unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.Circuits.substitute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.polynomial_specialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CutRank.support_cut_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.seed_circuit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.Circuits.border_substitute' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparseAffine.border_seed_circuit' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+finite-check
+q=2: no compatible pair for both signatures and all degrees 1..3
+q=3: no compatible pair for both signatures and all degrees 1..3
+q=4: no compatible pair for both signatures and all degrees 1..3
+q=5: no compatible pair for both signatures and all degrees 1..3
+q=7: no compatible pair for both signatures and all degrees 1..3
+q=8 t=3 u=2: all 8 path entries verified by spin enumeration
+q=11 t=1 u=2: all 8 path entries verified by spin enumeration
+q=13 t=2 u=6: all 8 path entries verified by spin enumeration
+q=16 t=2 u=2: all 8 path entries verified by spin enumeration
+q=17 t=1 u=2: all 8 path entries verified by spin enumeration
+q=19 t=1 u=2: all 8 path entries verified by spin enumeration
+q=23 t=1 u=2: all 8 path entries verified by spin enumeration
+q=29 t=1 u=2: all 8 path entries verified by spin enumeration
+q=31 t=1 u=2: all 8 path entries verified by spin enumeration
+q=32 t=2 u=2: all 8 path entries verified by spin enumeration
+q=37 t=1 u=3: all 8 path entries verified by spin enumeration
+q=67 t=1 u=3: all 8 path entries verified by spin enumeration
+q=101 t=1 u=2: all 8 path entries verified by spin enumeration
+q=167 t=1 u=3: all 8 path entries verified by spin enumeration
+q=9 t=3 u=4: all 8 path entries verified by spin enumeration
+q=25 t=1 u=5: all 8 path entries verified by spin enumeration
+q=49 t=7 u=7: all 8 path entries verified by spin enumeration
+
+quadratic-check
+n=4 assignments=48 variables=189 clauses=627
+n=5 assignments=240 variables=496 clauses=1685
+n=6 assignments=1440 variables=663 clauses=2251
+independently checked anchored rank assignments: 2168
+
+physical101
+n=2, F_101, t=1, u=2, variables=4608, edges=4640, width=0, Q=82, scalar=18, HC=27
+n=3, F_101, t=1, u=2, variables=19658, edges=19820, width=6, Q=57, scalar=86, HC=77
+n=4, F_101, t=1, u=2, variables=32172, edges=32440, width=8, Q=33, scalar=31, HC=76
+n=5, F_101, t=1, u=2, variables=69160, edges=69760, width=15, Q=38, scalar=47, HC=18
+
+quadratic-physical
+n=2, F_101, t=1, u=2, variables=11272, edges=11360, width=0, Q=99, scalar=71, HC=27
+n=3, F_101, t=1, u=2, variables=63438, edges=63980, width=7, Q=83, scalar=26, HC=77
+
+overlay2
+n=2, F_101, t=1, u=2, variables=197653, edges=199310, width=0, Q=100, scalar=86, HC=27
+
+approximation-check
+2 path indicators, Chebyshev degree 2, all weights and coefficient masses checked
+3 path indicators, Chebyshev degree 2, all weights and coefficient masses checked
+4 path indicators, Chebyshev degree 3, all weights and coefficient masses checked
+7 path indicators, Chebyshev degree 4, all weights and coefficient masses checked
+12 path indicators, Chebyshev degree 5, all weights and coefficient masses checked
+20 path indicators, Chebyshev degree 6, all weights and coefficient masses checked
+40 path indicators, Chebyshev degree 8, all weights and coefficient masses checked
+100 path indicators, Chebyshev degree 13, all weights and coefficient masses checked
+shared-root Bernoulli interpolation: target=72403/117649, approximation=73274/117649
+28 support-pattern ranks and all 4-coordinate pattern embeddings through three blocks verified
+
+symmetric-controls
+7680 endpoint-separated binary cuts, exact physical AND/OR restrictions for all four bit pairs
+195 rational interpolation and multilinear coefficient-mass controls
+111264 shifted and reflected pattern embeddings checked

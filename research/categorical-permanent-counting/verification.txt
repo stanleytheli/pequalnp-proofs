@@ -1,0 +1,72 @@
+Lean 4.36.0 with mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842.
+
+OracleFlow SHA-256 0d1ae9f4d146f22859e97469c9a810aa2728a5f9c4a2903169a48fa9c4bb1855
+'PositivePermanent.Flow.envelope' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.policy_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.assignment_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ParseFlow SHA-256 f9818439efb43c96ca49c744b311206b40b5d1bad7239a29b394479b5d325e32
+'PositivePermanent.Flow.parse_attains' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.parse_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.Flow.parse_flow_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+CornerMass SHA-256 23c4acf5416c7a6ef51a1990389f3ac69e1df680e206217a9139e134e83db1c6
+'PositivePermanent.Corner.mass_exhausts' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+FiberCoupling SHA-256 4ef29607e2c876905bf4e3eebe2e71ba8adf4f08554cb8a49308b7f73b681c18
+'PositivePermanent.Cut.coupled_laws' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+HallBlocks SHA-256 d31d1f5508ac0c152a38ee86ba7381401579e9fdbb6f9c58a121408e8500b2c3
+'PositivePermanent.HallBlocks.strict_hall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.HallBlocks.split_or_plus_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.HallBlocks.extend_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.HallBlocks.extend_two_physical' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+TightMatching SHA-256 34f5c1a9e8b8f70cdb62bd11112d0e89059af3324127bb07d099428a588c91b9
+'PositivePermanent.TightMatching.Cut.crossings_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositivePermanent.TightMatching.Cut.matchingEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+BraceReadout SHA-256 b3aa9c627aed26a65e5609be6d76ee51ec1f9e6521f2c4b1e14357248aaf04a9
+'BraceReadout.avoid_from_neighbors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BraceReadout.only_one_double' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BraceReadout.affine_readout' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+CategoricalCut SHA-256 08f87cf7e54938a79771fdc615323201771e82434fb737b8a78ed1fe878af379
+'CategoricalCut.marker_complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CategoricalCut.indicator_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PhysicalBrace SHA-256 0cdf629bdf95777ae0b47e44b4556f0f07d7f905b68e822813cb57bac124d4fd
+'PositivePermanent.HallBlocks.brace_affine_from_plus_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+UniversalReadout SHA-256 9b03fed767f42a0e4581fa1dac7a74f517bc05803fef7f359a3ee203e869c653
+'PositivePermanent.UniversalReadout.glue' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+check_pure_lifts.py
+Heawood: 24 matchings, 8 rigid unordered factorizations [(16, 11, 7), (17, 14, 5)]
+n=1: all 2 simple row/column-isomorphism classes
+n=2: all 7 simple row/column-isomorphism classes
+n=3: all 36 simple row/column-isomorphism classes
+n=4: all 317 simple row/column-isomorphism classes
+Exact rational lift checks: {'braces': 23, 'cuts': 30, 'nonempty_graphs': 331, 'nontrivial_affine_relations': 237, 'products': 226, 'pure': 4768, 'simplices': 700}
+
+check_pure_circuits.py
+{'checked_local_outcomes': 10296, 'circuits': 13725, 'flexible_pure_roots': 1723, 'repeated_child_slots': 1433}
+
+check_finite.py
+valid rectangles and indicator comparisons: 405 6372
+K3,3 nonaffine counterexample: all three even and three odd vertices verified
+K4,4 matchings 24 ordered_rectangles 144 first_colors 65536 nonconstant_binary_when_maximal 304
+K4,4 minus diagonal matchings 9 ordered_rectangles 144 first_colors 4096 nonconstant_binary_when_maximal 96
+K5,5 minus diagonal matchings 44 ordered_rectangles 400 first_colors 4000 nonconstant_binary_when_maximal 1
+
+check_exact_dimension.py
+two-brace splice [] (12, 7, 9, 2)
+two-brace splice [(2, 0)] (16, 8, 10, 2)
+two-brace splice [(0, 0)] (16, 8, 10, 2)
+exact rank census by number of exceptional leaves: [(0, 288), (1, 25), (2, 3)]
+
+check_compiler.py
+Tight-cut compilation: {'boards': 94, 'forms': 762, 'incidences': 6215, 'links': 18}
+210 signed and masked assignment duals agree with exhaustive permutation minima.
+2430 exact evaluations of purified shared, nested circuits agree with Boolean interpolation.
+Rejected the conflicting-label and uncovered-label controls.

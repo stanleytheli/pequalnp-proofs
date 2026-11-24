@@ -1,0 +1,160 @@
+FlowStep.lean: OK
+FlowCore.lean: OK
+FlowIterate.lean: OK
+FlowCost.lean: OK
+FlowCycle.lean: OK
+FlowUpper.lean: OK
+FlowLift.lean: OK
+FlowSquare.lean: OK
+Girth.lean: OK
+GirthExact.lean: OK
+GraphOrder.lean: OK
+GraphBounds.lean: OK
+Padding.lean: OK
+Checking FlowStep
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowStep.lean:23:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.Flow.newLeftZero`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowStep.lean:25:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.Flow.newRightZero`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowStep.lean:40:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.Flow.killed`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowStep.lean:59:12: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowStep.lean:60:12: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+'SparsePermanent.Flow.mass_contract' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowCore
+'SparsePermanent.CoreFlow.all_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowIterate
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowIterate.lean:14:17: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowIterate.lean:15:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowIterate.lean:57:22: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowIterate.lean:57:26: warning: Unused tactic linter: `rfl` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowIterate.lean:57:26: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'SparsePermanent.family_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowCost
+'SparsePermanent.family_flow_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowCycle
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:56:90: warning: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hx, hy]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:51:8: warning: automatically included section variable(s) unused in theorem `_private.FlowCycle.0.SparsePermanent.CycleFlow.absent_impulse`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:55:69: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:56:69: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:55:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowCycle.lean:56:69: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'SparsePermanent.CycleFlow.le_egirth' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowUpper
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowUpper.lean:18:8: warning: automatically included section variable(s) unused in theorem `_private.FlowUpper.0.SparsePermanent.CycleFlow.active_iff`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowUpper.lean:74:2: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+'SparsePermanent.CycleFlow.egirth_le_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowLift
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowLift.lean:47:7: warning: automatically included section variable(s) unused in theorem `SparsePermanent.Flow.ext`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowLift.lean:70:29: warning: This simp argument is unused:
+  diff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [same, Flow.extended]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SparsePermanent.lift_family_flow' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FlowSquare
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowSquare.lean:46:31: warning: This simp argument is unused:
+  ite_eq_right_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Prod.mk.injEq, ite_eq_left_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/FlowSquare.lean:46:48: warning: This simp argument is unused:
+  ite_eq_left_iff
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Prod.mk.injEq, ite_eq_right_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SparsePermanent.Square.mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Girth
+'SparsePermanent.family_egirth_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking GirthExact
+'SparsePermanent.family_egirth_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.family_girth_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking GraphOrder
+/tmp/sparse-permanent-additions.LjTl5Gl2/GraphOrder.lean:67:6: warning: Unused tactic linter: `<;>` can be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/GraphOrder.lean:67:10: warning: Unused tactic linter: `ring` is never executed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+/tmp/sparse-permanent-additions.LjTl5Gl2/GraphOrder.lean:67:10: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+'SparsePermanent.order_girth_power' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.rate_rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking GraphBounds
+'SparsePermanent.exact_lower_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.approximate_lower_order' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking Padding
+'SparsePermanent.permanent_padded' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified extensions are in /tmp/sparse-permanent-additions.LjTl5Gl2

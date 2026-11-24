@@ -1,0 +1,3 @@
+'SparsePermanent.Leaf.computes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.Leaf.regular_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.Leaf.approximates' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,32 @@
+Lean 4.36.0, mathlib fc4f59e577feb1a4956671bc04ac18aaaf8cd842.
+
+'Midpoint.pair_helly' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.positive_closed' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.event_le_prob' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.prob_le_events' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.support_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.midpoint_extract' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.midpoint_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.affine_limit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.positive_clause' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.graph_CNF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Midpoint.cube_graph_CNF' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+check_midpoint
+140 weighted graphs, 154 nonempty optimal-cover slices; all admissibility masks and assigned corners checked
+69 non-Hamiltonian separator matrices and all 1142 one-arc Hamiltonian extensions verified by Held–Karp
+bipartite half-record parity representations checked on all inputs at n=2,…,10
+
+check_paths
+weighted cyclic pin obstructions: 108 exact priority-weight cases; three-port odd-cycle gadget at 16 lengths
+2-block parity graph: 4092 full corner assignments matched a direct dynamic program
+3-block parity graph: 4088 full corner assignments matched a direct dynamic program
+
+check_hall
+order, distinct Hall obstructions, single-edge repairs 1 1 1
+order, distinct Hall obstructions, single-edge repairs 2 4 8
+order, distinct Hall obstructions, single-edge repairs 3 15 54
+order, distinct Hall obstructions, single-edge repairs 4 56 320
+order, distinct Hall obstructions, single-edge repairs 5 210 1750
+order, distinct Hall obstructions, single-edge repairs 6 792 9072
+independent two-rectangle covers checked on 3×3 universe 925

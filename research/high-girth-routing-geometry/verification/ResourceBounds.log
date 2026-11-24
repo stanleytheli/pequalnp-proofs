@@ -1,0 +1,1 @@
+'SparsePermanent.DirectedGrowth.polynomial_capacity' depends on axioms: [propext, Quot.sound]

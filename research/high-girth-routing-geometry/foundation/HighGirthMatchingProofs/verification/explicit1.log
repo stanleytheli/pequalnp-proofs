@@ -1,0 +1,5 @@
+'SparsePermanent.permanent_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.degree_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.count_operations' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.card_side' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.labels_family' depends on axioms: [propext, Classical.choice, Quot.sound]

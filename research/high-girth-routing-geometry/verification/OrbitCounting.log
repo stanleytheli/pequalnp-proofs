@@ -1,0 +1,13 @@
+lean/OrbitCounting.lean:20:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.OrbitCounting.uniform`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/OrbitCounting.lean:33:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.OrbitCounting.indicator`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.OrbitCounting.uniform' depends on axioms: [propext, Classical.choice, Quot.sound]

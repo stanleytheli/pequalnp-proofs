@@ -1,0 +1,143 @@
+EdgeCount.lean: OK
+DirectedSplit.lean: OK
+RoutedModel.lean: OK
+RoutedProjection.lean: OK
+DirectedGrowth.lean: OK
+BinaryWords.lean: OK
+PortAccess.lean: OK
+GreedyRouting.lean: OK
+PortTrees.lean: OK
+Routed build directory /tmp/sparse-routes.imIt9XNU
+Checking EdgeCount
+'SparsePermanent.Edges.family' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.Edges.deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DirectedSplit
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:17:8: warning: automatically included section variable(s) unused in theorem `_private.DirectedSplit.0.SparsePermanent.DirectedSplit.source`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:18:8: warning: automatically included section variable(s) unused in theorem `_private.DirectedSplit.0.SparsePermanent.DirectedSplit.plain`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:19:8: warning: automatically included section variable(s) unused in theorem `_private.DirectedSplit.0.SparsePermanent.DirectedSplit.used`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:21:8: warning: automatically included section variable(s) unused in theorem `_private.DirectedSplit.0.SparsePermanent.DirectedSplit.free`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:30:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:32:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:47:8: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:60:8: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+/tmp/sparse-routes.imIt9XNU/DirectedSplit.lean:59:10: warning: This simp argument is unused:
+  outgoing
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SparsePermanent.DirectedSplit.permanent_outgoing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.DirectedSplit.permanent_incoming' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RoutedModel
+'SparsePermanent.RoutedModel.Generated.permanent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.RoutedModel.Generated.labels' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking RoutedProjection
+'SparsePermanent.RoutedModel.projects' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking DirectedGrowth
+/tmp/sparse-routes.imIt9XNU/DirectedGrowth.lean:113:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Route.trans`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/DirectedGrowth.lean:119:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Route.start`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.DirectedGrowth.connect' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking BinaryWords
+/tmp/sparse-routes.imIt9XNU/BinaryWords.lean:24:8: warning: This simp argument is unused:
+  Fintype.card_pi_const
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SparsePermanent.BinaryWords.card_words' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PortAccess
+/tmp/sparse-routes.imIt9XNU/PortAccess.lean:7:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Route.mono`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.DirectedGrowth.link' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking GreedyRouting
+'SparsePermanent.DirectedGrowth.pack' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PortTrees
+/tmp/sparse-routes.imIt9XNU/PortTrees.lean:24:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Forest.core_card`:
+  [Fintype V]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/PortTrees.lean:31:8: warning: automatically included section variable(s) unused in theorem `_private.PortTrees.0.SparsePermanent.DirectedGrowth.Forest.at_depth`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/PortTrees.lean:42:8: warning: automatically included section variable(s) unused in theorem `_private.PortTrees.0.SparsePermanent.DirectedGrowth.Forest.walk`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/PortTrees.lean:56:8: warning: automatically included section variable(s) unused in theorem `_private.PortTrees.0.SparsePermanent.DirectedGrowth.Forest.fat`:
+  [Fintype V]
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+/tmp/sparse-routes.imIt9XNU/PortTrees.lean:63:8: warning: automatically included section variable(s) unused in theorem `_private.PortTrees.0.SparsePermanent.DirectedGrowth.Forest.branches_disjoint`:
+  [Fintype V]
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.DirectedGrowth.Forest.port' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified finite routing in /tmp/sparse-routes.imIt9XNU

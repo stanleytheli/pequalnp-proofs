@@ -1,0 +1,13 @@
+lean/Butterfly.lean:15:8: warning: automatically included section variable(s) unused in theorem `_private.Butterfly.0.SparsePermanent.Butterfly.used`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/Butterfly.lean:18:8: warning: automatically included section variable(s) unused in theorem `_private.Butterfly.0.SparsePermanent.Butterfly.free`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.Butterfly.permanent' depends on axioms: [propext, Classical.choice, Quot.sound]

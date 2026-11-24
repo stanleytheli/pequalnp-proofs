@@ -1,0 +1,14 @@
+lean/TightForest.lean:73:55: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+lean/TightForest.lean:73:71: warning: Unused tactic linter: `<;>` can be replaced with `;`.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+lean/TightForest.lean:73:55: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+lean/TightForest.lean:73:71: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'SparsePermanent.DirectedGrowth.Forest.from_boxes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.DirectedGrowth.Forest.tight_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]

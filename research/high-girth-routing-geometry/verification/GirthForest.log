@@ -1,0 +1,37 @@
+lean/GirthForest.lean:22:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Branches.tip_append`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/GirthForest.lean:31:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Branches.follows`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/GirthForest.lean:36:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.DirectedGrowth.Branches.trace_length`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/GirthForest.lean:45:8: warning: automatically included section variable(s) unused in theorem `_private.GirthForest.0.SparsePermanent.DirectedGrowth.Branches.decode_trace`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/GirthForest.lean:57:8: warning: automatically included section variable(s) unused in theorem `_private.GirthForest.0.SparsePermanent.DirectedGrowth.Branches.follows_copy`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.DirectedGrowth.Branches.inject' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.DirectedGrowth.Branches.opposite' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.DirectedGrowth.Forest.from_girth' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,21 @@
+Checking repaired RegularCompletion
+b9b3fbc4b7ea48705df78747d6adcbf09bb6e2606a7fc8feeb01f92b2b45d12b  RegularCompletion.lean
+RegularCompletion.lean:17:0: warning: automatically included section variable(s) unused in theorem `SparsePermanent.Attach.order_bound`:
+  [DecidableEq I]
+  [DecidableEq B]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] [DecidableEq B] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+RegularCompletion.lean:86:5: warning: `ENat.coe_le_coe` has been deprecated: Use `ENat.natCast_le_natCast` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵l̵e̵_̵c̵o̵e̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲l̲e̲_̲n̲a̲t̲C̲a̲s̲t̲
+'SparsePermanent.Attach.order_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.Attach.complete' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.cubic_hard_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+p=41 order=2870 degree=3 connected bipartite girth=14 BFS-roots=2870
+p=73 order=16206 degree=3 connected bipartite girth=22 BFS-roots=1
+m=5 physical_vertices=2870 matched_pairs=1435 used_directed_arcs=262 verified_monomials=120
+m=7 physical_vertices=16206 matched_pairs=8103 used_directed_arcs=644 verified_monomials=5040
+Verified cubic completion in /tmp/sparse-cubic.cMaiuU7U

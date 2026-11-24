@@ -1,0 +1,6 @@
+m=2 h=0 minimum-girth=4 N=516 observed=4 copies=43 switches=1
+m=2 h=0 minimum-girth=5 N=1032 observed=6 copies=86 switches=2
+m=2 h=1 minimum-girth=6 N=2060 observed=6 copies=103 switches=2
+m=3 h=1 minimum-girth=5 N=1200 observed=6 copies=25 switches=2
+m=3 h=0 minimum-girth=6 N=2580 observed=6 copies=86 switches=2
+m=4 h=0 minimum-girth=7 N=5768 observed=8 copies=103 switches=2

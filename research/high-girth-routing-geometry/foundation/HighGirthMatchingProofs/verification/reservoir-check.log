@@ -1,0 +1,9 @@
+reservoir=K3,3 m=2 h=0 N=48 observed-girth=4 projection=exact
+reservoir=K3,3 m=3 h=0 N=102 observed-girth=4 projection=exact
+reservoir=K3,3 m=2 h=1 N=80 observed-girth=4 projection=exact
+reservoir=Heawood m=2 h=0 N=96 observed-girth=6 projection=exact
+reservoir=Heawood m=3 h=0 N=198 observed-girth=6 projection=exact
+reservoir=Heawood m=2 h=1 N=160 observed-girth=6 projection=exact
+reservoir=Tutte-Coxeter m=2 h=0 N=192 observed-girth=8 projection=exact
+reservoir=Tutte-Coxeter m=3 h=0 N=390 observed-girth=8 projection=exact
+reservoir=Tutte-Coxeter m=2 h=1 N=320 observed-girth=8 projection=exact

@@ -1,0 +1,9 @@
+lean/CubicRouting.lean:9:8: warning: automatically included section variable(s) unused in theorem `_private.CubicRouting.0.SparsePermanent.Contract.route_reachable`:
+  [Fintype I]
+  [DecidableEq I]
+  [Nonempty I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] [Nonempty I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.Contract.all_routes' depends on axioms: [propext, Classical.choice, Quot.sound]

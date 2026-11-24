@@ -1,0 +1,8 @@
+lean/BinaryContraction.lean:22:8: warning: automatically included section variable(s) unused in theorem `_private.BinaryContraction.0.SparsePermanent.Contract.filter_degree`:
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'SparsePermanent.Contract.antireciprocal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SparsePermanent.Contract.max_degree' depends on axioms: [propext, Classical.choice, Quot.sound]

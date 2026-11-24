@@ -1,0 +1,46 @@
+lean/OddSubdivision.lean:21:8: warning: automatically included section variable(s) unused in theorem `_private.OddSubdivision.0.SparsePermanent.extend_none`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/OddSubdivision.lean:24:8: warning: automatically included section variable(s) unused in theorem `_private.OddSubdivision.0.SparsePermanent.extend_some_free`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/OddSubdivision.lean:28:8: warning: automatically included section variable(s) unused in theorem `_private.OddSubdivision.0.SparsePermanent.extend_some_used`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/OddSubdivision.lean:32:8: warning: automatically included section variable(s) unused in theorem `_private.OddSubdivision.0.SparsePermanent.extend_none_some`:
+  [Fintype I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+lean/OddSubdivision.lean:46:8: warning: This simp argument is unused:
+  divideEdge
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+lean/OddSubdivision.lean:74:10: warning: This simp argument is unused:
+  divideEdge
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+lean/OddSubdivision.lean:77:10: warning: This simp argument is unused:
+  divideEdge
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hn]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SparsePermanent.permanent_divideEdge' depends on axioms: [propext, Classical.choice, Quot.sound]

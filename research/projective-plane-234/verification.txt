@@ -1,0 +1,58 @@
+Lean (version 4.36.0, aarch64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)
+
+Checking WindowCore997
+'PEqualNP.Outside.Window997.light_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.first_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking OneNotRefundCases
+'PEqualNP.Outside.Window997.plane57_linear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_disjoint_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_one_not_229' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.plane57_threshold_three997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.nested_count997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.full_one_row997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.thin_deletion997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.small_transversal997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Chain997
+'PEqualNP.Outside.Window997.chain_first997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.local_rank_exact997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.false_full_cut997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking BiCut997
+'PEqualNP.Outside.Window997.gate_witness997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking SparseCertificate997
+'PEqualNP.Outside.Window997.sparse_certificate997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking PhysicalSparse997
+'PEqualNP.Outside.Window997.ordinary_packing997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.early_meeting_cost997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.physical_sparse997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Plane232
+'PEqualNP.Outside.Window997.plane57_one_not_232' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Plane233
+'PEqualNP.Outside.Window997.plane57_one_not_233' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Transparent997
+'PEqualNP.Outside.Window997.heavy_skip997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Reader997
+'PEqualNP.Outside.Window997.reader_transparent997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.no_readers997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking PhysicalSkip997
+'PEqualNP.Outside.Window997.physical_sparse_skip997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking Plane234
+'PEqualNP.Outside.Window997.plane57_one_not_234' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking OrHeavy997
+'PEqualNP.Outside.Window997.heavy_or997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.or_family997' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Checking PinnedOr997
+'PEqualNP.Outside.Window997.physical_or_oriented997' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PEqualNP.Outside.Window997.physical_or_family997' depends on axioms: [propext, Classical.choice, Quot.sound]

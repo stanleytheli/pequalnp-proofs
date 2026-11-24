@@ -1,0 +1,8 @@
+functional Tseitin gate controls and signed equality cycles of lengths 1 through 8 passed
+planted m=2 witness_bits=1 sat_count=0 primaries_checked=128 accepted=1 exponent_bits=288 clauses=412 max_occurrence=3
+planted m=2 witness_bits=2 sat_count=3 primaries_checked=512 accepted=4 exponent_bits=330 clauses=472 max_occurrence=3
+planted m=3 witness_bits=0 sat_count=1 primaries_checked=1024 accepted=3 exponent_bits=736 clauses=1052 max_occurrence=3
+planted m=3 witness_bits=2 sat_count=3 primaries_checked=96 accepted=7 exponent_bits=834 clauses=1192 max_occurrence=3
+signed m=2 primaries_checked=512 constant=0 cycle_monomials=1 max_occurrence=3
+signed m=2 primaries_checked=512 constant=2 cycle_monomials=1 max_occurrence=3
+signed m=2 primaries_checked=512 constant=-2 cycle_monomials=1 max_occurrence=3

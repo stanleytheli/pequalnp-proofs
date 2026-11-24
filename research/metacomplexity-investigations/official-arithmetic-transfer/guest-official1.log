@@ -1,0 +1,18 @@
+e06ddc66862ac5d72fed8d690edc9b3b981914bcb1b6e16baa7a83cb5375732e  PlantedSlices.lean
+a6fc5484dbf945524fc809d771096f69a003ba8d3f727be1412724e590a93e32  OfficialTransfer.lean
+Checking PlantedSlices
+'AlgebraicMeta.planted_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.empty_baseline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.signed_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking OfficialTransfer
+/tmp/paired-official.fYRW0pnh/OfficialTransfer.lean:14:0: warning: automatically included section variable(s) unused in theorem `AlgebraicMeta.pickLeaf_poly`:
+  [Fintype I]
+  [DecidableEq I]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype I] [DecidableEq I] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+'AlgebraicMeta.planted_computes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.planted_approximates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.upstream_planted' depends on axioms: [propext, Classical.choice, Quot.sound]
+Verified direct upstream bridge in /tmp/paired-official.fYRW0pnh

@@ -1,0 +1,3 @@
+All 917506 threshold/row pairs passed for 1..15 independent inputs.
+All 135168 gate-array/row pairs passed through k=513, including absent output/forward reads and fan-in zero or two.
+Five additional large column/gate-count certificates passed through k=10001.

@@ -1,0 +1,38 @@
+OccurrenceCycle.lean
+'AlgebraicMeta.occurrence_cycle' depends on axioms: [propext, Quot.sound]
+'AlgebraicMeta.signed_occurrence_cycle' depends on axioms: [propext, Quot.sound]
+
+CopyCompiler.lean
+'AlgebraicMeta.CopyCompiler.modelEquiv' depends on axioms: [propext, Quot.sound]
+'AlgebraicMeta.CopyCompiler.copied_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+FunctionalCNF.lean
+'AlgebraicMeta.FunctionalCNF.Op.clauses_iff' depends on axioms: [propext]
+'AlgebraicMeta.FunctionalCNF.Network.accepted_model_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+EncodedModels.lean
+'AlgebraicMeta.placedEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.placed_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PlantedSlices.lean
+'AlgebraicMeta.planted_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.empty_baseline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.signed_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+SignedTransfer.lean
+'AlgebraicMeta.signed_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.signed_identity_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.sum_unique_extensions' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+FiberPolynomial.lean
+'AlgebraicMeta.coeff_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.transfer_iff_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+QueryCounting.lean
+'AlgebraicMeta.transcript_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.regular_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+ExactWidth.lean
+'AlgebraicMeta.ExactWidth.other_model_of_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.ExactWidth.width_three_occurrence_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+

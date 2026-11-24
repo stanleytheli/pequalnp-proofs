@@ -1,0 +1,5 @@
+600 trimmed circuits and complete semantic support checks; 416 all-essential; 391 read-once
+4200 cofactor sets with every returned background tested; 2711 minterm/zero-certificate bounds
+84 exact-size monotone spike circuits, including full truth tables and overlaps
+248 ordinary parity-flip functions and P4 tested on every possible binary root cut
+180 sparse-formula controls for satisfiability and parsimonious boundary discrepancy

@@ -1,0 +1,4 @@
+'NearReadOnce.minterm_maxterm_gate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearReadOnce.block_spike_gate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearReadOnce.Tensor.four_copy_contraction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'NearReadOnce.Tensor.equality_of_zero_energy' depends on axioms: [propext, Classical.choice, Quot.sound]

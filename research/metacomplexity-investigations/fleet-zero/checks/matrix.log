@@ -1,0 +1,2 @@
+'ParityEncoding.zero_matrix' depends on axioms: [propext, Quot.sound]
+'ParityEncoding.zero_table_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]

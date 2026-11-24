@@ -1,0 +1,29 @@
+IncidenceCompiler.lean
+'AlgebraicMeta.IncidenceCompiler.satisfyingEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.IncidenceCompiler.three_occurrences' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.IncidenceCompiler.old_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.IncidenceCompiler.link_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PairedLayers.lean
+'AlgebraicMeta.Paired.two_matchings_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.Paired.selected_essential' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.Paired.two_models_essential' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+PhaseCircuit.lean
+'AlgebraicMeta.PhaseCircuit.phased_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.PhaseCircuit.antipodal_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+GateLeaves.lean
+'AlgebraicMeta.GateLeaves.essential_leaf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.GateLeaves.essential_size' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+TightCone.lean
+'AlgebraicMeta.GateLeaves.saturated_cone' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+AntipodalFloor.lean
+'AlgebraicMeta.AntipodalFloor.add_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.AntipodalFloor.product_forces_second' depends on axioms: [propext, Classical.choice]
+
+BooleanBlocks.lean
+'AlgebraicMeta.BooleanBlocks.membership_iff_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]
+

@@ -1,0 +1,5 @@
+83 arbitrary binary circuit presentations; 1920 exact energies versus direct ternary-grid interpolation
+53 all-essential presentations verified against binary formula enumeration; 44 read-once formulas reconstructed and evaluated on every input
+2 variables: 10 matrix-cut versus tensor-factor checks across 10 essential functions
+3 variables: 654 matrix-cut versus tensor-factor checks across 218 essential functions
+4 variables: 452158 matrix-cut versus tensor-factor checks across 64594 essential functions

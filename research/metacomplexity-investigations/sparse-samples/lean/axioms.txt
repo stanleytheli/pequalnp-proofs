@@ -1,0 +1,1 @@
+'WeightedFormula.CappedMinimum.exact_capped_gates' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,15 @@
+n=1 parity=0 nonempty=1 maximal-size=1 equality-patterns=1
+n=1 parity=1 nonempty=1 maximal-size=1 equality-patterns=1
+PASS n=1: 4 distinct 2-CNF relations
+n=2 parity=0 nonempty=3 maximal-size=2 equality-patterns=1
+n=2 parity=1 nonempty=3 maximal-size=2 equality-patterns=1
+PASS n=2: 16 distinct 2-CNF relations
+n=3 parity=0 nonempty=10 maximal-size=2 equality-patterns=6
+n=3 parity=1 nonempty=10 maximal-size=2 equality-patterns=6
+PASS n=3: 166 distinct 2-CNF relations
+n=4 parity=0 nonempty=66 maximal-size=4 equality-patterns=6
+n=4 parity=1 nonempty=66 maximal-size=4 equality-patterns=6
+PASS n=4: 4170 distinct 2-CNF relations
+n=5 parity=0 nonempty=436 maximal-size=4 equality-patterns=60
+n=5 parity=1 nonempty=436 maximal-size=4 equality-patterns=60
+PASS n=5: every nonempty monochromatic relation tested for 2-CNF definability

@@ -1,0 +1,7 @@
+4-vertex cubic base, 36 labeled rows: 200 randomized exact or noisy formula repairs
+6-vertex cubic base, 54 labeled rows: 200 randomized exact or noisy formula repairs
+6-vertex cubic base, 54 labeled rows: 200 randomized exact or noisy formula repairs
+8-vertex cubic base, 72 labeled rows: 200 randomized exact or noisy formula repairs
+K4: 262144 orientations, 16 cap allocations; optimal sizes: [27, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26]
+C5: all 1024 reachable sample signatures checked, optimum 7 gates, penalty-2 optimum 7
+C6: all 512 reachable sample signatures checked, optimum 8 gates, penalty-2 optimum 8

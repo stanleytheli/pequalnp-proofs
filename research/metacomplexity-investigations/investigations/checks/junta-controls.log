@@ -1,0 +1,4 @@
+1848 legal pairs of two-juntas on four bits, 20832 defined-row certificates checked
+4340 CNF-union inputs: all surviving zero-gate projections match exactly
+424 odd inputs checked for sharp block-parity witness multiplicities
+1912 source inputs checked on the exact minimum-arity zero-gate construction

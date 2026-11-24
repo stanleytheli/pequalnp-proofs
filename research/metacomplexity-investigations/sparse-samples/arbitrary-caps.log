@@ -1,0 +1,2 @@
+All 1799 read-budget vectors agree with exhaustive ownership optimization on five graphs
+All 44 cap vectors on the isolated-edge and 4-path examples also agree with full truth-table tree synthesis

@@ -1,0 +1,4 @@
+balanced tables: 64 parameter cases, 409440 coefficients, 668752 conditional marginals
+hidden tags: all 16 planted locations, all 16 per-tag histograms at every location
+coordinate orbit: 5040 relabelings, exact hit probability 2/35, five parity dimensions
+bilinear forms: 72 exact rational matrix and Hessian ranks, all partition bounds through k=9

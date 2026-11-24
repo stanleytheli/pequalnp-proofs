@@ -1,0 +1,6 @@
+m=2 selectors=1 comparator=0: 64 raw witnesses, 8 coefficient counts, 32 spanning tours checked
+physical graph: 7387 vertices, 15445 simple arcs, max indegree/outdegree 3
+m=3 selectors=2 comparator=0: 2048 raw witnesses, 108 coefficient counts, 0 spanning tours checked
+m=2 selectors=1 comparator=1: 64 raw witnesses, 8 coefficient counts, 32 spanning tours checked
+physical graph: 3559 vertices, 7441 simple arcs, max indegree/outdegree 3
+m=3 selectors=2 comparator=1: 2048 raw witnesses, 108 coefficient counts, 0 spanning tours checked

@@ -1,0 +1,6 @@
+antipodal order=2 SAT_witnesses=0 models=2 N=2976 degree=1488 essential=2976 baseline_floor=5951 one antipodal pair and every retained HC coefficient checked
+antipodal order=2 SAT_witnesses=3 models=5 N=3408 degree=1704 essential=3408 baseline_floor=6815 one antipodal pair and every retained HC coefficient checked
+antipodal order=3 SAT_witnesses=1 models=4 N=7584 degree=3792 essential=7584 baseline_floor=15167 one antipodal pair and every retained HC coefficient checked
+read-once n=2 enumerated=2 paired supports with a unique antipodal pair=1
+read-once n=4 enumerated=52 paired supports with a unique antipodal pair=2
+read-once n=6 enumerated=5504 paired supports with a unique antipodal pair=4

@@ -1,0 +1,13 @@
+# The exact zero-gate functions and their row signatures
+
+For every target arity a (including zero), the fleet's `HasCircuitSize a f 0` holds precisely when f is the constant false function or one of its a coordinate projections. The empty gate list can return a raw input index. Returning index a is an out-of-range read, whose specified value is false.
+
+For any Boolean row matrix and prescribed labels, `ParityEncoding.zero_matrix` states that a zero-gate witness exists exactly when the label vector equals an entire column or is all zero. `zero_table_matrix` gives the same equivalence for the fleet's `Consistent` relation when the listed rows are exactly the table's prescribed entries. Conversely `code_rows` builds a physical row matrix for any finite Boolean code A containing zero, with precisely |A|−1 target coordinates. The default false function supplies the unused zero column.
+
+`checksum_arity` specializes the count to the graph of any Boolean checksum that takes the all-zero word to zero. On m unrestricted source bits this takes exactly 2^m−1 target coordinates. `even_rows_distinct` proves that the canonical projection matrix of all nonzero even words on at least three bits has pairwise distinct target rows, as required when prescribing a partial truth table. `even_arity` proves that this particular even-word construction on m+1 positions takes exactly 2^m−1 target coordinates.
+
+`one_mem` identifies the arity-one language completely at size zero. A valid two-entry table is a member exactly when its row at zero does not prescribe true. At row one the two zero-gate functions permit either prescribed label. As a consequence, `one_scope` proves that every fixed-format exact parity reduction to this case from n source bits with certificate locality q satisfies n≤q. The proof uses the actual fleet definitions of `QueryLocal` and `PartialMCSP`.
+
+The five modules were checked in the disposable guest under Lean 4.36.0 and Mathlib `fc4f59e577feb1a4956671bc04ac18aaaf8cd842`. The axiom transcripts accompany them. The matrix and exact column bounds need only the project definitions and Mathlib. `OneRow.lean` additionally uses the fleet's fixed-format helper declarations rebuilt by the companion `fleet-locality` packet. [Fleet definitions](https://github.com/brilliant-hq/pequalnp-proofs/blob/f7603b13d1bbc91340505b88daaabcdaf47eae5d/lean/PEqualNP/Defs/MetaComplexity.lean)
+
+From the published combined folder, run `PROJECT_LEAN_ROOT=/absolute/path/to/pequalnp-proofs/lean sh check-package.sh`. To reuse an earlier checked output directory, set `PARITY_OBJECTS` to the directory containing its `ParityCircuitReplay.olean` and `ParityEncoding.olean`. If the companion sources are located elsewhere, use `FLEET_LOCALITY_DIR`.

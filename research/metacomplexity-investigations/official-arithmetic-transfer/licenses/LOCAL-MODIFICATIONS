@@ -1,0 +1,1 @@
+lean/Statement.lean is derived from vp-vnp/Statement.lean at Anthropic formal-math commit 11b6c7e3c927df2658f513b6b68ea7f8929c62c5. Two calls to MvPolynomial.coeff use method syntax to preserve semantics on Mathlib 4.36.0. Other Lean sources in this package contain the local proofs.

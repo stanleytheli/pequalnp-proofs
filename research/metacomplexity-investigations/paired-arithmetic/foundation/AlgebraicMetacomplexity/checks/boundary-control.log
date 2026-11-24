@@ -1,0 +1,2 @@
+two-occurrence satisfiability compared with enumeration on 1400 formulas and 11200 single-bit restrictions
+checked all 9678 three-/four-variable exact-three formulas with distinct literals and occurrence ≤3, omitting repeated clauses

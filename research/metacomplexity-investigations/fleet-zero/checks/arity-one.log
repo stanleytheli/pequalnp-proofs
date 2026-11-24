@@ -1,0 +1,3 @@
+'ParityEncoding.fixed_zero_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityEncoding.one_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityEncoding.one_scope' depends on axioms: [propext, Classical.choice, Quot.sound]

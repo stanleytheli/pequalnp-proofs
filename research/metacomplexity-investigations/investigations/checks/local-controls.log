@@ -1,0 +1,4 @@
+18434 actual threshold circuit evaluations; sharp legal-code rows certified for q=2,3,4
+1023 public binary strings checked for validity obstructions and format freezing
+207 simultaneous witness samples passed the independently enumerated sparsification example
+504 bounded-occurrence 2-CNF sign patterns checked for parity and exact model counts

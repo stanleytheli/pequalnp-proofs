@@ -1,0 +1,60 @@
+{
+  "id": "L-meta-043",
+  "commit": "git:f7603b13d1bbc91340505b88daaabcdaf47eae5d",
+  "artifact": {
+    "rests_on": [
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.Columns",
+        "sha256": "sha256:7942f6b1e768b867ff460876a8fc8a4014e3ce62a0e6bf7ed2d784b9278ac8e2"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.Elim",
+        "sha256": "sha256:e9c069bb76cdbd425b8be404c6c65680a1a831c18e6f841b640daf4f5cc6b4b7"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.Hardwire",
+        "sha256": "sha256:7225df3d9ebbb1dfbc88d0d7425538d7007b6f4af66383a3ff61fdc9326a2207"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.HittingSet",
+        "sha256": "sha256:a32ddbb9f212516be8f4c3c96509afa05fa1287aa418f581555a708e96280018"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.LocalConstruct",
+        "sha256": "sha256:154024161ee7972fc6cef4f0d012bf059292b99bd291fbf6e6afd84cab5b2f5c"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.LocalFormat",
+        "sha256": "sha256:a6c7af88911759ccf56cb9ebf1639561a410dafc75727038dd550949ee5e0805"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.LocalMajority",
+        "sha256": "sha256:ff51f395f905f1b774734c97ac1844ced012272b7780a695486f9da24ba09e2e"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.LocalMajorityQ",
+        "sha256": "sha256:9537aee8b71ea2deb7014ba2b0e3f580334f048896e56c93c33d69ff9849b6bc"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.LocalPrivate",
+        "sha256": "sha256:406a685ac140e261aedd40bcf41ca2e20803e52d65030258213b37ee0e580640"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.OrChain",
+        "sha256": "sha256:3165fced1fa10aae9e453e3817c77637ef4237af6cdced7d754fce5552f00aa5"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.Shannon",
+        "sha256": "sha256:561c30045e047ee7169c30da6c33382f809f7885c2a6dc6632479ec611f1f0fb"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.Helpers.Support",
+        "sha256": "sha256:3dd59846b791fea1391addc012be943cfedc1b47951752455adb79b76d5cfda0"
+      },
+      {
+        "module": "PEqualNP.MetaComplexity.L043",
+        "sha256": "sha256:1447d6ac3c40f3894c372a04651b80a36ddab963c145aa7f9e47c9f87cedd99f"
+      }
+    ]
+  }
+}

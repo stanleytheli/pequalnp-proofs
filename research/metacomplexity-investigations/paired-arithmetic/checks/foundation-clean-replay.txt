@@ -1,0 +1,45 @@
+Checking OccurrenceCycle
+'AlgebraicMeta.occurrence_cycle' depends on axioms: [propext, Quot.sound]
+'AlgebraicMeta.signed_occurrence_cycle' depends on axioms: [propext, Quot.sound]
+Checking CopyCompiler
+'AlgebraicMeta.CopyCompiler.modelEquiv' depends on axioms: [propext, Quot.sound]
+'AlgebraicMeta.CopyCompiler.copied_monomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FunctionalCNF
+'AlgebraicMeta.FunctionalCNF.Op.clauses_iff' depends on axioms: [propext]
+'AlgebraicMeta.FunctionalCNF.Network.accepted_model_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking PlantedSlices
+'AlgebraicMeta.planted_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.empty_baseline' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.signed_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking SignedTransfer
+'AlgebraicMeta.signed_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.signed_identity_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.sum_unique_extensions' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking EncodedModels
+'AlgebraicMeta.placedEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.placed_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking FiberPolynomial
+'AlgebraicMeta.coeff_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.transfer_iff_fibers' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking QueryCounting
+'AlgebraicMeta.transcript_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.regular_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]
+Checking ExactWidth
+'AlgebraicMeta.ExactWidth.other_model_of_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AlgebraicMeta.ExactWidth.width_three_occurrence_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+functional Tseitin gate controls and signed equality cycles of lengths 1 through 8 passed
+planted m=2 witness_bits=1 sat_count=0 primaries_checked=128 accepted=1 exponent_bits=288 clauses=412 max_occurrence=3
+planted m=2 witness_bits=2 sat_count=3 primaries_checked=512 accepted=4 exponent_bits=330 clauses=472 max_occurrence=3
+planted m=3 witness_bits=0 sat_count=1 primaries_checked=1024 accepted=3 exponent_bits=736 clauses=1052 max_occurrence=3
+planted m=3 witness_bits=2 sat_count=3 primaries_checked=96 accepted=7 exponent_bits=834 clauses=1192 max_occurrence=3
+signed m=2 primaries_checked=512 constant=0 cycle_monomials=1 max_occurrence=3
+signed m=2 primaries_checked=512 constant=2 cycle_monomials=1 max_occurrence=3
+signed m=2 primaries_checked=512 constant=-2 cycle_monomials=1 max_occurrence=3
+fiber m=5 tours=24 index_bits=2 witnesses=1 baseline=False coefficient_range=1..1 identity_Q=True identity_mod=[2, 3, 5] cases=96
+fiber m=5 tours=24 index_bits=2 witnesses=0 baseline=False coefficient_range=0..1 identity_Q=False identity_mod=[] cases=48
+fiber m=3 tours=2 index_bits=1 witnesses=1 baseline=True coefficient_range=3..3 identity_Q=False identity_mod=[2] cases=8
+fiber m=3 tours=2 index_bits=1 witnesses=2 baseline=True coefficient_range=4..4 identity_Q=False identity_mod=[3] cases=16
+fiber m=3 tours=2 index_bits=1 witnesses=1 baseline=True coefficient_range=2..3 identity_Q=False identity_mod=[] cases=8
+two-occurrence satisfiability compared with enumeration on 1400 formulas and 11200 single-bit restrictions
+checked all 9678 three-/four-variable exact-three formulas with distinct literals and occurrence ≤3, omitting repeated clauses
+Verified objects are in [temporary verification directory]

@@ -1,0 +1,8 @@
+exact physical truth table N=8 rows=256 models=1
+exact physical truth table N=8 rows=256 models=3
+exact physical truth table N=8 rows=256 models=1
+exact physical truth table N=16 rows=65536 models=2
+exact physical truth table N=16 rows=65536 models=0
+planted order=2 sat_count=0 N=1156 degree=578 exact occurrence=3, decomposition and HC coefficients checked
+planted order=2 sat_count=3 N=1324 degree=662 exact occurrence=3, decomposition and HC coefficients checked
+planted order=3 sat_count=1 N=2948 degree=1474 exact occurrence=3, decomposition and HC coefficients checked

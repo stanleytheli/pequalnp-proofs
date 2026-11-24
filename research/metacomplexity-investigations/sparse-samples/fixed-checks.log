@@ -1,0 +1,4 @@
+3-variable universal sample: 8 switches, 176 old vertices, 1584 sparse examples, all 256 masks agree with truth-table SAT (255 yes)
+All eight monotone-verifier-model switch inputs agree
+CLIQUE(3,2): all 8 inputs agree; 165 independent-set blocks checked graphically
+CLIQUE(3,3): all 8 inputs agree; 237 independent-set blocks checked graphically

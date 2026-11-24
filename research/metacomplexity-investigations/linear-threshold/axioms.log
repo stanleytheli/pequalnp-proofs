@@ -1,0 +1,4 @@
+'LinearThreshold.counter_exists' depends on axioms: [propext, Quot.sound]
+'LinearThreshold.mass' depends on axioms: [propext, Quot.sound]
+'LinearThreshold.gate_budget' depends on axioms: [propext, Quot.sound]
+'LinearThreshold.comparison_step' depends on axioms: [propext, Quot.sound]

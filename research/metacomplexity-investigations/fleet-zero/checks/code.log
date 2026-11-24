@@ -1,0 +1,2 @@
+'ParityEncoding.code_rows' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ParityEncoding.checksum_arity' depends on axioms: [propext, Classical.choice, Quot.sound]

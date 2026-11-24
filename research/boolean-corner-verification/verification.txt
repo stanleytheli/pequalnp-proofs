@@ -1,0 +1,10 @@
+'PositiveCornerClosure.even_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveCornerClosure.odd_profile' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveCornerClosure.row_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveCornerClosure.repair_uncovered' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveCornerClosure.first_error' depends on axioms: [propext, Quot.sound]
+'PositiveCornerClosure.eval_interpolant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PositiveCornerClosure.regular_interpolant' depends on axioms: [propext, Classical.choice, Quot.sound]
+64 exhaustive row-state controls, 98 physical core min-cuts, and 30 full mixed long-subdivision cover optimizations with exact minimizing multiplicities and read-two star partitions passed
+20 raw physical Bernoulli leading-term contractions passed; largest elimination width 4
+5748 matching/Boolean-limit controls, 160 direct minimum-cover enumerations, and 2667 separated clause pairs passed

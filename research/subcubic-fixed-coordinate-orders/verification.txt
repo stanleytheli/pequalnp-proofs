@@ -1,0 +1,9 @@
+raw physical contraction order=963 coefficient=5 width=2
+substitutions=0 source=5 source_edges=5 max_weight=1 ray_rank=4 face=5 physical=170 path_width<=21 checked_encodings=11
+raw physical contraction order=7550 coefficient=22 width=7
+substitutions=1 source=11 source_edges=20 max_weight=2 ray_rank=10 face=22 physical=680 path_width<=69 checked_encodings=105
+substitutions=2 source=17 source_edges=35 max_weight=4 ray_rank=16 face=98 physical=1190 path_width<=85 checked_encodings=1011
+substitutions=3 source=23 source_edges=50 max_weight=8 ray_rank=22 face=436 physical=1700 path_width<=89 checked_encodings=9729
+substitutions=4 source=29 source_edges=65 max_weight=16 ray_rank=28 face=1940 physical=2210 path_width<=89 checked_encodings=2088
+substitutions=5 source=35 source_edges=80 max_weight=32 ray_rank=34 face=8632 physical=2720 path_width<=89 checked_encodings=8782
+21726 independent-set encodings checked for inclusion-maximality and affine scores
